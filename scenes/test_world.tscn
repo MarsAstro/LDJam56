@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://dxp5nkxcpkidt"]
+
+[ext_resource type="Shader" path="res://shaders/floor_grid.gdshader" id="1_6y2qo"]
+[ext_resource type="Texture2D" uid="uid://dwkdjnd8l18kh" path="res://textures/square.png" id="2_py152"]
+[ext_resource type="PackedScene" uid="uid://0yjbffwi7ted" path="res://scenes/snake.tscn" id="3_13851"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g0oeo"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_1hmm5"]
+sky_material = SubResource("ProceduralSkyMaterial_g0oeo")
+
+[sub_resource type="Environment" id="Environment_wy8dv"]
+background_mode = 2
+sky = SubResource("Sky_1hmm5")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5rdh2"]
+render_priority = 0
+shader = ExtResource("1_6y2qo")
+shader_parameter/grid_texture = ExtResource("2_py152")
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_wy8dv")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0840807, -0.0271516, -0.0935892)
+use_collision = true
+size = Vector3(280.717, 0.0505371, 340.357)
+material = SubResource("ShaderMaterial_5rdh2")
+
+[node name="Snake" parent="." instance=ExtResource("3_13851")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.35939)
+
+[node name="TestBox" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03296, -2.57443)
+use_collision = true
+size = Vector3(5.92969, 1, 3.11426)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(5.29118, 0, 0, 0, 0.601578, 0.798814, 0, -0.798814, 0.601578, 0.663194, 2.26041, -12.9914)
+use_collision = true
+size = Vector3(2.35938, 9.90601, 1)
