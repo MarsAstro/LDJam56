@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://0yjbffwi7ted"]
+[gd_scene load_steps=9 format=3 uid="uid://0yjbffwi7ted"]
 
-[ext_resource type="Script" path="res://scripts/snake_movement.gd" id="1_50dnv"]
+[ext_resource type="Script" path="res://scripts/snake.gd" id="1_50dnv"]
+[ext_resource type="Script" path="res://scripts/snake_movement.gd" id="2_cpupg"]
 [ext_resource type="ArrayMesh" uid="uid://dep26m8lxirnc" path="res://meshes/snake_mesh.tres" id="2_gl7ux"]
 [ext_resource type="Script" path="res://scripts/follow_node.gd" id="3_fnrxi"]
 
@@ -18,10 +19,16 @@ height = 0.190057
 radius = 0.08
 height = 0.16
 
-[node name="Snake" type="Node3D"]
+[node name="Snake" type="Node3D" node_paths=PackedStringArray("snake_head", "snake_front_body", "snake_back_body", "snake_tail", "snake_mesh")]
+script = ExtResource("1_50dnv")
+snake_head = NodePath("Head")
+snake_front_body = NodePath("FrontBody")
+snake_back_body = NodePath("BackBody")
+snake_tail = NodePath("Tail")
+snake_mesh = NodePath("Head/SnakeMesh")
 
 [node name="Head" type="CharacterBody3D" parent="." node_paths=PackedStringArray("pivot", "camera")]
-script = ExtResource("1_50dnv")
+script = ExtResource("2_cpupg")
 pivot = NodePath("Pivot")
 camera = NodePath("Pivot/SpringArm3D/Camera3D")
 
@@ -52,29 +59,29 @@ margin = 0.5
 [node name="Camera3D" type="Camera3D" parent="Head/Pivot/SpringArm3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 
-[node name="BodyPart1" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
+[node name="FrontBody" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 1.19269)
 script = ExtResource("3_fnrxi")
 node_to_follow = NodePath("../Head")
 follow_distance = 1.2
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="BodyPart1"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="FrontBody"]
 mesh = SubResource("SphereMesh_vrg6j")
 
-[node name="BodyPart2" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
+[node name="BackBody" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 2.23035)
 script = ExtResource("3_fnrxi")
-node_to_follow = NodePath("../BodyPart1")
+node_to_follow = NodePath("../FrontBody")
 follow_distance = 1.2
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="BodyPart2"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BackBody"]
 mesh = SubResource("SphereMesh_vrg6j")
 
-[node name="BodyPart3" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
+[node name="Tail" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 3.41009)
 script = ExtResource("3_fnrxi")
-node_to_follow = NodePath("../BodyPart2")
+node_to_follow = NodePath("../BackBody")
 follow_distance = 1.2
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="BodyPart3"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Tail"]
 mesh = SubResource("SphereMesh_vrg6j")
