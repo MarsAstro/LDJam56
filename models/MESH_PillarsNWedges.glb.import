@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dlbuplshm004"
-path="res://.godot/imported/MESH_PillarsNWedges.glb-e865c7ee8b1319c0dfacdb3985c5de43.scn"
+path="res://.godot/imported/MESH_PillarsNWedges.glb-d1079d83e0d2fc66ad704264b958de45.scn"
 
 [deps]
 
-source_file="res://models/MESH_PillarsNWedges.glb"
-dest_files=["res://.godot/imported/MESH_PillarsNWedges.glb-e865c7ee8b1319c0dfacdb3985c5de43.scn"]
+source_file="res://Models/MESH_PillarsNWedges.glb"
+dest_files=["res://.godot/imported/MESH_PillarsNWedges.glb-d1079d83e0d2fc66ad704264b958de45.scn"]
 
 [params]
 
