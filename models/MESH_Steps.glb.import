@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://m8q6lti5wg3m"
-path="res://.godot/imported/MESH_Steps.glb-98cef6895b94fc38483a80354c6b7e72.scn"
+path="res://.godot/imported/MESH_Steps.glb-3a07ac8cd03137d5ca92f5c77e50c43f.scn"
 
 [deps]
 
-source_file="res://models/MESH_Steps.glb"
-dest_files=["res://.godot/imported/MESH_Steps.glb-98cef6895b94fc38483a80354c6b7e72.scn"]
+source_file="res://Models/MESH_Steps.glb"
+dest_files=["res://.godot/imported/MESH_Steps.glb-3a07ac8cd03137d5ca92f5c77e50c43f.scn"]
 
 [params]
 

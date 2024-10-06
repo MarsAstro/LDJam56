@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b5c8dd1058xx8"
-path="res://.godot/imported/MESH_BrickFloor&Ramps.glb-a68fa2317ab9e2e19dee158c5c6aa85e.scn"
+path="res://.godot/imported/MESH_BrickFloor&Ramps.glb-a378d7b37d8ef38c17dde41597af39bb.scn"
 
 [deps]
 
-source_file="res://models/MESH_BrickFloor&Ramps.glb"
-dest_files=["res://.godot/imported/MESH_BrickFloor&Ramps.glb-a68fa2317ab9e2e19dee158c5c6aa85e.scn"]
+source_file="res://Models/MESH_BrickFloor&Ramps.glb"
+dest_files=["res://.godot/imported/MESH_BrickFloor&Ramps.glb-a378d7b37d8ef38c17dde41597af39bb.scn"]
 
 [params]
 
