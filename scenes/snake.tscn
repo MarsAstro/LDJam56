@@ -162,11 +162,10 @@ bind/11/pose = Transform3D(1, 1.50996e-07, 4.44928e-21, 2.25857e-22, -2.94663e-1
 radius = 0.0889625
 height = 0.391282
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_14qqx"]
-height = 0.19
-
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ewlbf"]
 height = 0.190057
+
+[sub_resource type="SphereMesh" id="SphereMesh_2sa4w"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_vrg6j"]
 radius = 0.08
@@ -201,6 +200,7 @@ camera = NodePath("Pivot/SpringArm3D/Camera3D")
 
 [node name="Armature" type="Node3D" parent="Head"]
 transform = Transform3D(3.24, 0, 0, 0, 3.24, 0, 0, 0, 3.24, 0, 0.0947221, 0.0095872)
+visible = false
 
 [node name="Skeleton3D" type="Skeleton3D" parent="Head/Armature"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -298,11 +298,6 @@ skin = SubResource("Skin_hmgj3")
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.00363278, 0.08777, -0.00350645)
 shape = SubResource("CapsuleShape3D_vyawf")
 
-[node name="CoilMesh" type="MeshInstance3D" parent="Head"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.501, 0.141215)
-visible = false
-mesh = SubResource("CylinderMesh_14qqx")
-
 [node name="CoilCollider" type="CollisionShape3D" parent="Head"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.500888, 0.141215)
 shape = SubResource("CylinderShape3D_ewlbf")
@@ -318,25 +313,17 @@ margin = 0.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 
 [node name="CoilFrontBody" type="Node3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.967381, 0.788011)
-visible = false
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/CoilFrontBody"]
-mesh = SubResource("SphereMesh_vrg6j")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.895055, 0.494375)
 
 [node name="CoilBackBody" type="Node3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.967381, -0.520403)
-visible = false
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/CoilBackBody"]
-mesh = SubResource("SphereMesh_vrg6j")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0235343, 0.896779, -0.234841)
 
 [node name="CoilTail" type="Node3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0546759, -0.359904)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0546759, -0.258039)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/CoilTail"]
-mesh = SubResource("SphereMesh_vrg6j")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head"]
+transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, 0, 0.0679743, 0)
+mesh = SubResource("SphereMesh_2sa4w")
 
 [node name="SlitherFrontBody" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 1.19269)
@@ -376,16 +363,34 @@ transform = Transform3D(-0.902302, -0.0253155, 0.430346, 0, 0.998258, 0.0587245,
 
 [node name="Test1" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.160383, 0, 0, 0, 0.160383, 0, 0, 0, 0.160383, 0, 0, 0)
+visible = false
 mesh = SubResource("SphereMesh_gfpdt")
 
 [node name="Test2" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.160383, 0, 0, 0, 0.160383, 0, 0, 0, 0.160383, 0, 0, 0)
+visible = false
 mesh = SubResource("SphereMesh_gfpdt")
 
 [node name="Test3" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.160383, 0, 0, 0, 0.160383, 0, 0, 0, 0.160383, 0, 0, 0)
+visible = false
 mesh = SubResource("SphereMesh_gfpdt")
 
 [node name="Test4" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.160383, 0, 0, 0, 0.160383, 0, 0, 0, 0.160383, 0, 0, 0)
+visible = false
 mesh = SubResource("SphereMesh_gfpdt")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
+polygon = PackedVector2Array(-0.0271923, -0.0334124, -0.0362521, -0.00449719, -0.0312265, 0.0237834, -0.000937382, 0.0376443, 0.029905, 0.0249173, 0.0405791, -0.00113798, 0.0336193, -0.0333862, -0.000152448, -0.0439177)
+mode = 2
+path_node = NodePath("../BodyPath")
+path_interval_type = 0
+path_interval = 1.0
+path_simplify_angle = 0.0
+path_rotation = 2
+path_local = false
+path_continuous_u = true
+path_u_distance = 1.0
+path_joined = false
+smooth_faces = true
