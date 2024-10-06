@@ -16,7 +16,6 @@ var coil_amount: float
 @export var coiling_speed: float = 4
 
 @onready var coil_collider: CollisionShape3D = $CoilCollider
-@onready var coil: MeshInstance3D = $CoilMesh
 @onready var head_collider: CollisionShape3D = $HeadCollider
 
 func _ready():
@@ -47,11 +46,9 @@ func _process(delta: float) -> void:
 
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump.
 	if Input.is_action_just_pressed("jump") and coil_amount >= 1.0 and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 	
@@ -60,14 +57,10 @@ func _physics_process(delta: float) -> void:
 		if coil_amount >= 1.0:
 			head_collider.disabled = true
 			coil_collider.disabled = false
-			coil.visible = false
 		else:
 			head_collider.disabled = false
 			coil_collider.disabled = true
-			coil.visible = false
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("move_right", "move_left", "move_backward", "move_forward")
 	var direction := (transform.basis * Vector3(-input_dir.x, 0, -input_dir.y)).normalized()
 	if is_on_floor():
