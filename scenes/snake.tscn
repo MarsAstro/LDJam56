@@ -159,11 +159,11 @@ bind/11/bone = -1
 bind/11/pose = Transform3D(1, 1.50996e-07, 4.44928e-21, 2.25857e-22, -2.94663e-14, 1, 1.50996e-07, -1, -2.94663e-14, -6.36955e-10, -1.34179, 0.00421836)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vyawf"]
-radius = 0.0889625
-height = 0.391282
+radius = 0.112928
+height = 0.340841
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ewlbf"]
-height = 0.190057
+height = 0.280511
 
 [sub_resource type="SphereMesh" id="SphereMesh_2sa4w"]
 
@@ -297,7 +297,7 @@ skin = SubResource("Skin_hmgj3")
 "blend_shapes/Close mouth" = 0.0
 
 [node name="HeadCollider" type="CollisionShape3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.00363278, 0.08777, -0.00350645)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0111507, 0.08777, -0.0604605)
 shape = SubResource("CapsuleShape3D_vyawf")
 
 [node name="CoilCollider" type="CollisionShape3D" parent="Head"]
@@ -365,7 +365,7 @@ mesh = SubResource("SphereMesh_vrg6j")
 curve = SubResource("Curve3D_85je7")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="BodyPath"]
-transform = Transform3D(-0.902302, -0.0253155, 0.430346, 0, 0.998258, 0.0587245, -0.43109, 0.0529871, -0.900743, -0.198771, 1.21663, -0.14136)
+transform = Transform3D(-0.902302, -0.0253155, 0.430346, 0, 0.998257, 0.0587245, -0.43109, 0.0529871, -0.900743, -0.198771, 1.21663, -0.14136)
 
 [node name="BodyPolygon" type="CSGPolygon3D" parent="."]
 polygon = PackedVector2Array(-0.0271923, -0.0334124, -0.0362521, -0.00449719, -0.0312265, 0.0237834, -0.000937382, 0.0376443, 0.029905, 0.0249173, 0.0405791, -0.00113798, 0.0336193, -0.0333862, -0.000152448, -0.0439177)

@@ -69,7 +69,8 @@ func _physics_process(delta: float) -> void:
 	
 	var input_dir := Input.get_vector("move_right", "move_left", "move_backward", "move_forward")
 	var strafe_speed: float = 0.0 if Input.is_action_pressed("coil") else 1.0
-	var direction := (transform.basis * Vector3(-input_dir.x * strafe_speed, 0, -input_dir.y)).normalized()
+	var forward_speed: float = -1.0 if Input.is_action_pressed("coil") else -input_dir.y
+	var direction := (transform.basis * Vector3(-input_dir.x * strafe_speed, 0, forward_speed)).normalized()
 	if is_on_floor():
 		if direction:
 			velocity.x = direction.x * speed

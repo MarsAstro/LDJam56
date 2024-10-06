@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0e2ajl7ajeae"]
+
+[ext_resource type="Script" path="res://scripts/egg.gd" id="1_upfch"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_uymrk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fy6sr"]
+albedo_color = Color(1, 1, 2, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_baua6"]
+material = SubResource("StandardMaterial3D_fy6sr")
+
+[node name="Egg" type="Area3D"]
+transform = Transform3D(0.135, 0, 0, 0, 0.135, 0, 0, 0, 0.135, 0, 0, 0)
+script = ExtResource("1_upfch")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_uymrk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_baua6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
