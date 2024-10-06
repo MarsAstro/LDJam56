@@ -1,7 +1,7 @@
 class_name SnakeBody
 extends CharacterBody3D
 
-const WALK_SPEED = 8.0
+const SLITHER_SPEED = 4.0
 const COIL_SPEED = 12.0
 const JUMP_VELOCITY: float = 6
 const MOUSE_SENSITIVITY: float = 0.05
@@ -59,7 +59,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 	
 	if is_on_floor():
-		speed = lerp(WALK_SPEED, COIL_SPEED, coil_amount)
+		speed = lerp(SLITHER_SPEED, COIL_SPEED, coil_amount)
 		if coil_amount >= 1.0:
 			head_collider.disabled = true
 			coil_collider.disabled = false
