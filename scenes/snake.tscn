@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://0yjbffwi7ted"]
 
 [ext_resource type="Script" path="res://scripts/snake.gd" id="1_50dnv"]
-[ext_resource type="Script" path="res://scripts/snake_movement.gd" id="2_cpupg"]
+[ext_resource type="Script" path="res://scripts/snake_body.gd" id="2_cpupg"]
 [ext_resource type="ArrayMesh" uid="uid://dep26m8lxirnc" path="res://editable_meshes/snake_mesh.tres" id="2_gl7ux"]
 [ext_resource type="Script" path="res://scripts/follow_node.gd" id="3_fnrxi"]
 
@@ -19,13 +19,16 @@ height = 0.190057
 radius = 0.08
 height = 0.16
 
-[node name="Snake" type="Node3D" node_paths=PackedStringArray("snake_head", "snake_front_body", "snake_back_body", "snake_tail", "snake_mesh")]
+[node name="Snake" type="Node3D" node_paths=PackedStringArray("snake_body", "snake_mesh", "slither_snake_front_body", "slither_snake_back_body", "slither_snake_tail", "coil_snake_front_body", "coil_snake_back_body", "coil_snake_tail")]
 script = ExtResource("1_50dnv")
-snake_head = NodePath("Head")
-snake_front_body = NodePath("FrontBody")
-snake_back_body = NodePath("BackBody")
-snake_tail = NodePath("Tail")
+snake_body = NodePath("Head")
 snake_mesh = NodePath("Head/SnakeMesh")
+slither_snake_front_body = NodePath("SlitherFrontBody")
+slither_snake_back_body = NodePath("SlitherBackBody")
+slither_snake_tail = NodePath("SlitherTail")
+coil_snake_front_body = NodePath("Head/CoilFrontBody")
+coil_snake_back_body = NodePath("Head/CoilBackBody")
+coil_snake_tail = NodePath("Head/CoilTail")
 
 [node name="Head" type="CharacterBody3D" parent="." node_paths=PackedStringArray("pivot", "camera")]
 script = ExtResource("2_cpupg")
@@ -59,29 +62,47 @@ margin = 0.5
 [node name="Camera3D" type="Camera3D" parent="Head/Pivot/SpringArm3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 
-[node name="FrontBody" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
+[node name="CoilFrontBody" type="Node3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.967381, 0.788011)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/CoilFrontBody"]
+mesh = SubResource("SphereMesh_vrg6j")
+
+[node name="CoilBackBody" type="Node3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.967381, -0.520403)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/CoilBackBody"]
+mesh = SubResource("SphereMesh_vrg6j")
+
+[node name="CoilTail" type="Node3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0546759, -0.359904)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/CoilTail"]
+mesh = SubResource("SphereMesh_vrg6j")
+
+[node name="SlitherFrontBody" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 1.19269)
 script = ExtResource("3_fnrxi")
 node_to_follow = NodePath("../Head")
 follow_distance = 1.2
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="FrontBody"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SlitherFrontBody"]
 mesh = SubResource("SphereMesh_vrg6j")
 
-[node name="BackBody" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
+[node name="SlitherBackBody" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 2.23035)
 script = ExtResource("3_fnrxi")
-node_to_follow = NodePath("../FrontBody")
+node_to_follow = NodePath("../SlitherFrontBody")
 follow_distance = 1.2
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="BackBody"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SlitherBackBody"]
 mesh = SubResource("SphereMesh_vrg6j")
 
-[node name="Tail" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
+[node name="SlitherTail" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 3.41009)
 script = ExtResource("3_fnrxi")
-node_to_follow = NodePath("../BackBody")
+node_to_follow = NodePath("../SlitherBackBody")
 follow_distance = 1.2
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Tail"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SlitherTail"]
 mesh = SubResource("SphereMesh_vrg6j")
