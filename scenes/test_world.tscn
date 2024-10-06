@@ -80,6 +80,7 @@ use_collision = true
 size = Vector3(2.35938, 9.90601, 1)
 
 [node name="Window" type="Window" parent="."]
+visible = false
 
 [node name="BrickFloor" type="MeshInstance3D" parent="Window"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7295, 0.0813894, 5.57685)

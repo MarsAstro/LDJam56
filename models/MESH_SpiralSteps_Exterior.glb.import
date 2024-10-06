@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bds80syp0wdys"
-path="res://.godot/imported/MESH_SpiralSteps_Exterior.glb-fe9105f6fbd428221c7164010e2c5aa1.scn"
+path="res://.godot/imported/MESH_SpiralSteps_Exterior.glb-38c00cb59f013d07c9a1117e82798767.scn"
 
 [deps]
 
-source_file="res://Models/MESH_SpiralSteps_Exterior.glb"
-dest_files=["res://.godot/imported/MESH_SpiralSteps_Exterior.glb-fe9105f6fbd428221c7164010e2c5aa1.scn"]
+source_file="res://models/MESH_SpiralSteps_Exterior.glb"
+dest_files=["res://.godot/imported/MESH_SpiralSteps_Exterior.glb-38c00cb59f013d07c9a1117e82798767.scn"]
 
 [params]
 

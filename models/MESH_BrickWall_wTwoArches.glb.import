@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bs106wbn7t4qh"
-path="res://.godot/imported/MESH_BrickWall_wTwoArches.glb-af9e86a4853d5e6729012948ba364071.scn"
+path="res://.godot/imported/MESH_BrickWall_wTwoArches.glb-0e2df98614df312deb255ed306bf62e7.scn"
 
 [deps]
 
-source_file="res://Models/MESH_BrickWall_wTwoArches.glb"
-dest_files=["res://.godot/imported/MESH_BrickWall_wTwoArches.glb-af9e86a4853d5e6729012948ba364071.scn"]
+source_file="res://models/MESH_BrickWall_wTwoArches.glb"
+dest_files=["res://.godot/imported/MESH_BrickWall_wTwoArches.glb-0e2df98614df312deb255ed306bf62e7.scn"]
 
 [params]
 

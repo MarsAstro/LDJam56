@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfqnb30fgvrr7"
-path.s3tc="res://.godot/imported/MESH_Steps_MAT_StoneSteps_Base_color.png-d9a9bce3a3ca9f5c4f8ce5af289181af.s3tc.ctex"
+path.s3tc="res://.godot/imported/MESH_Steps_MAT_StoneSteps_Base_color.png-a4af4907012828a3c33c20ce30ef7789.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Models/MESH_Steps_MAT_StoneSteps_Base_color.png"
-dest_files=["res://.godot/imported/MESH_Steps_MAT_StoneSteps_Base_color.png-d9a9bce3a3ca9f5c4f8ce5af289181af.s3tc.ctex"]
+source_file="res://models/MESH_Steps_MAT_StoneSteps_Base_color.png"
+dest_files=["res://.godot/imported/MESH_Steps_MAT_StoneSteps_Base_color.png-a4af4907012828a3c33c20ce30ef7789.s3tc.ctex"]
 
 [params]
 

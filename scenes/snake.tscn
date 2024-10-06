@@ -203,6 +203,7 @@ camera = NodePath("Pivot/SpringArm3D/Camera3D")
 transform = Transform3D(3.24, 0, 0, 0, 3.24, 0, 0, 0, 3.24, 0, 0.0947221, 0.0095872)
 
 [node name="Skeleton3D" type="Skeleton3D" parent="Head/Armature"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 bones/0/name = "Bone"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 1.50996e-07, 1.50996e-07, 0, -1, 0, 1, 0, 0, 0, 0)

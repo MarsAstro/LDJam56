@@ -1,6 +1,6 @@
 [gd_resource type="ArrayMesh" load_steps=3 format=4 uid="uid://pu43hxpxlfut"]
 
-[ext_resource type="Texture2D" uid="uid://dfqnb30fgvrr7" path="res://Models/MESH_Steps_MAT_StoneSteps_Base_color.png" id="1_bwhjd"]
+[ext_resource type="Texture2D" uid="uid://dfqnb30fgvrr7" path="res://models/MESH_Steps_MAT_StoneSteps_Base_color.png" id="1_bwhjd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjrjj"]
 resource_name = "MAT_StoneSteps"
