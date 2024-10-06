@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c0x01m05rg4o7"
-path="res://.godot/imported/MESH_StoneOrnament.glb-c5f3541a95f1c5f9c7c95818bb586882.scn"
+path="res://.godot/imported/MESH_StoneOrnament.glb-be66ec29cffef37c526eeeb2b18d3971.scn"
 
 [deps]
 
-source_file="res://Models/MESH_StoneOrnament.glb"
-dest_files=["res://.godot/imported/MESH_StoneOrnament.glb-c5f3541a95f1c5f9c7c95818bb586882.scn"]
+source_file="res://models/MESH_StoneOrnament.glb"
+dest_files=["res://.godot/imported/MESH_StoneOrnament.glb-be66ec29cffef37c526eeeb2b18d3971.scn"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://da6mvy3td0il8"
-path.s3tc="res://.godot/imported/MESH_BrickWall_wTwoArches_MAT_BrickWall_wTwoArches_Base_color.png-39b9f3d5b22611ee73edda69c114c16a.s3tc.ctex"
+path.s3tc="res://.godot/imported/MESH_BrickWall_wTwoArches_MAT_BrickWall_wTwoArches_Base_color.png-aa2a81d1cdd16efaa4f489606cb92f0e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Models/MESH_BrickWall_wTwoArches_MAT_BrickWall_wTwoArches_Base_color.png"
-dest_files=["res://.godot/imported/MESH_BrickWall_wTwoArches_MAT_BrickWall_wTwoArches_Base_color.png-39b9f3d5b22611ee73edda69c114c16a.s3tc.ctex"]
+source_file="res://models/MESH_BrickWall_wTwoArches_MAT_BrickWall_wTwoArches_Base_color.png"
+dest_files=["res://.godot/imported/MESH_BrickWall_wTwoArches_MAT_BrickWall_wTwoArches_Base_color.png-aa2a81d1cdd16efaa4f489606cb92f0e.s3tc.ctex"]
 
 [params]
 

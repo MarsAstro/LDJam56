@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://del1xyomqfy6p"
-path="res://.godot/imported/MESH_Snake.glb-04159df3ce89eb01e99ecfecf9d78693.scn"
+path="res://.godot/imported/MESH_Snake.glb-459088e47c81ee99a83918342be95792.scn"
 
 [deps]
 
-source_file="res://Models/MESH_Snake.glb"
-dest_files=["res://.godot/imported/MESH_Snake.glb-04159df3ce89eb01e99ecfecf9d78693.scn"]
+source_file="res://models/MESH_Snake.glb"
+dest_files=["res://.godot/imported/MESH_Snake.glb-459088e47c81ee99a83918342be95792.scn"]
 
 [params]
 

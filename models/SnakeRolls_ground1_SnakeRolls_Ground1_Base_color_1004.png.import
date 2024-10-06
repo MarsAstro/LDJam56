@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqmq8gqa1skgg"
-path.s3tc="res://.godot/imported/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1004.png-51213f00f10fa4b4d4f81d58dd180644.s3tc.ctex"
+path.s3tc="res://.godot/imported/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1004.png-9a99192eb057c6ef211bb67c9d322f1c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Models/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1004.png"
-dest_files=["res://.godot/imported/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1004.png-51213f00f10fa4b4d4f81d58dd180644.s3tc.ctex"]
+source_file="res://models/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1004.png"
+dest_files=["res://.godot/imported/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1004.png-9a99192eb057c6ef211bb67c9d322f1c.s3tc.ctex"]
 
 [params]
 
