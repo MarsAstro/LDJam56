@@ -187,16 +187,17 @@ snake_skeleton = NodePath("Head/Armature/Skeleton3D")
 slither_snake_front_body = NodePath("SlitherFrontBody")
 slither_snake_back_body = NodePath("SlitherBackBody")
 slither_snake_tail = NodePath("SlitherTail")
-coil_snake_front_body = NodePath("Head/CoilFrontBody")
-coil_snake_back_body = NodePath("Head/CoilBackBody")
-coil_snake_tail = NodePath("Head/CoilTail")
+coil_snake_front_body = NodePath("Head/CoilPivot/CoilFrontBody")
+coil_snake_back_body = NodePath("Head/CoilPivot/CoilBackBody")
+coil_snake_tail = NodePath("Head/CoilPivot/CoilTail")
 body_path = NodePath("BodyPath")
 body_path_follow = NodePath("BodyPath/PathFollow3D")
 
-[node name="Head" type="CharacterBody3D" parent="." node_paths=PackedStringArray("pivot", "camera")]
+[node name="Head" type="CharacterBody3D" parent="." node_paths=PackedStringArray("camera_pivot", "camera", "coil_pivot")]
 script = ExtResource("2_cpupg")
-pivot = NodePath("Pivot")
-camera = NodePath("Pivot/SpringArm3D/Camera3D")
+camera_pivot = NodePath("CameraPivot")
+camera = NodePath("CameraPivot/SpringArm3D/Camera3D")
+coil_pivot = NodePath("CoilPivot")
 
 [node name="Armature" type="Node3D" parent="Head"]
 transform = Transform3D(3.24, 0, 0, 0, 3.24, 0, 0, 0, 3.24, 0, 0.0947221, 0.0095872)
@@ -302,28 +303,32 @@ shape = SubResource("CapsuleShape3D_vyawf")
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.500888, 0.141215)
 shape = SubResource("CylinderShape3D_ewlbf")
 
-[node name="Pivot" type="Node3D" parent="Head"]
+[node name="CameraPivot" type="Node3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 0.951852, 0.306559, 0, -0.306559, 0.951852, 0, 0.330227, 0)
 
-[node name="SpringArm3D" type="SpringArm3D" parent="Head/Pivot"]
+[node name="SpringArm3D" type="SpringArm3D" parent="Head/CameraPivot"]
 spring_length = 5.0
 margin = 0.5
 
-[node name="Camera3D" type="Camera3D" parent="Head/Pivot/SpringArm3D"]
+[node name="Camera3D" type="Camera3D" parent="Head/CameraPivot/SpringArm3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 
-[node name="CoilFrontBody" type="Node3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.895055, 0.494375)
+[node name="CoilPivot" type="Node3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518647, 0.126591)
 
-[node name="CoilBackBody" type="Node3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0235343, 0.896779, -0.234841)
+[node name="CoilFrontBody" type="Node3D" parent="Head/CoilPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.376408, 0.367784)
 
-[node name="CoilTail" type="Node3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0546759, -0.258039)
+[node name="CoilBackBody" type="Node3D" parent="Head/CoilPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.378, -0.361)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Head"]
-transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, 0, 0.0679743, 0)
+[node name="CoilTail" type="Node3D" parent="Head/CoilPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.463972, -0.384631)
+
+[node name="Temphead" type="MeshInstance3D" parent="Head/CoilPivot"]
+transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, 0, -0.450673, -0.126591)
 mesh = SubResource("SphereMesh_2sa4w")
+skeleton = NodePath("../..")
 
 [node name="SlitherFrontBody" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 1.19269)
@@ -361,6 +366,20 @@ curve = SubResource("Curve3D_85je7")
 [node name="PathFollow3D" type="PathFollow3D" parent="BodyPath"]
 transform = Transform3D(-0.902302, -0.0253155, 0.430346, 0, 0.998258, 0.0587245, -0.43109, 0.0529871, -0.900743, -0.198771, 1.21663, -0.14136)
 
+[node name="BodyPolygon" type="CSGPolygon3D" parent="."]
+polygon = PackedVector2Array(-0.0271923, -0.0334124, -0.0362521, -0.00449719, -0.0312265, 0.0237834, -0.000937382, 0.0376443, 0.029905, 0.0249173, 0.0405791, -0.00113798, 0.0336193, -0.0333862, -0.000152448, -0.0439177)
+mode = 2
+path_node = NodePath("../BodyPath")
+path_interval_type = 0
+path_interval = 1.0
+path_simplify_angle = 0.0
+path_rotation = 2
+path_local = false
+path_continuous_u = true
+path_u_distance = 1.0
+path_joined = false
+smooth_faces = true
+
 [node name="Test1" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.160383, 0, 0, 0, 0.160383, 0, 0, 0, 0.160383, 0, 0, 0)
 visible = false
@@ -380,17 +399,3 @@ mesh = SubResource("SphereMesh_gfpdt")
 transform = Transform3D(0.160383, 0, 0, 0, 0.160383, 0, 0, 0, 0.160383, 0, 0, 0)
 visible = false
 mesh = SubResource("SphereMesh_gfpdt")
-
-[node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
-polygon = PackedVector2Array(-0.0271923, -0.0334124, -0.0362521, -0.00449719, -0.0312265, 0.0237834, -0.000937382, 0.0376443, 0.029905, 0.0249173, 0.0405791, -0.00113798, 0.0336193, -0.0333862, -0.000152448, -0.0439177)
-mode = 2
-path_node = NodePath("../BodyPath")
-path_interval_type = 0
-path_interval = 1.0
-path_simplify_angle = 0.0
-path_rotation = 2
-path_local = false
-path_continuous_u = true
-path_u_distance = 1.0
-path_joined = false
-smooth_faces = true
