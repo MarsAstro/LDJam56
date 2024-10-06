@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/snake.gd" id="1_50dnv"]
 [ext_resource type="Script" path="res://scripts/snake_movement.gd" id="2_cpupg"]
-[ext_resource type="ArrayMesh" uid="uid://dep26m8lxirnc" path="res://meshes/snake_mesh.tres" id="2_gl7ux"]
+[ext_resource type="ArrayMesh" uid="uid://dep26m8lxirnc" path="res://editable_meshes/snake_mesh.tres" id="2_gl7ux"]
 [ext_resource type="Script" path="res://scripts/follow_node.gd" id="3_fnrxi"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vyawf"]
