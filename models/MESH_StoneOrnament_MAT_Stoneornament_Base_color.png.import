@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pp8hgr8p56cc"
-path.s3tc="res://.godot/imported/MESH_StoneOrnament_MAT_Stoneornament_Base_color.png-0bd3ca23935544cbef1cd81ae0fc3478.s3tc.ctex"
+path.s3tc="res://.godot/imported/MESH_StoneOrnament_MAT_Stoneornament_Base_color.png-5bfcb42570523c2dbaea1d633894f034.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://models/MESH_StoneOrnament_MAT_Stoneornament_Base_color.png"
-dest_files=["res://.godot/imported/MESH_StoneOrnament_MAT_Stoneornament_Base_color.png-0bd3ca23935544cbef1cd81ae0fc3478.s3tc.ctex"]
+source_file="res://Models/MESH_StoneOrnament_MAT_Stoneornament_Base_color.png"
+dest_files=["res://.godot/imported/MESH_StoneOrnament_MAT_Stoneornament_Base_color.png-5bfcb42570523c2dbaea1d633894f034.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbdatcbraf05d"
-path.s3tc="res://.godot/imported/MESH_SpiralSteps_Interior_MAT_SpiralStairs_Base_color.png-3dcd1714c19619f5443caa9e6db026cb.s3tc.ctex"
+path.s3tc="res://.godot/imported/MESH_SpiralSteps_Interior_MAT_SpiralStairs_Base_color.png-4a07dbea3e972e9833d9bfe0fc37690d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://models/MESH_SpiralSteps_Interior_MAT_SpiralStairs_Base_color.png"
-dest_files=["res://.godot/imported/MESH_SpiralSteps_Interior_MAT_SpiralStairs_Base_color.png-3dcd1714c19619f5443caa9e6db026cb.s3tc.ctex"]
+source_file="res://Models/MESH_SpiralSteps_Interior_MAT_SpiralStairs_Base_color.png"
+dest_files=["res://.godot/imported/MESH_SpiralSteps_Interior_MAT_SpiralStairs_Base_color.png-4a07dbea3e972e9833d9bfe0fc37690d.s3tc.ctex"]
 
 [params]
 

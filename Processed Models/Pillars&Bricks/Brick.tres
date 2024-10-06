@@ -1,0 +1,41 @@
+[gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://bm4yppesdstq2"]
+
+[ext_resource type="Texture2D" uid="uid://b7g8faxi1xhqk" path="res://Models/MESH_PillarsNWedges_MAT_PillarsNWedges_Base_color.png" id="1_oop3v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yt2df"]
+resource_name = "MAT_PillarsNWedges"
+cull_mode = 2
+albedo_texture = ExtResource("1_oop3v")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8nyc5"]
+_surfaces = [{
+"aabb": AABB(-1.23232, -0.537213, -0.603404, 2.46465, 1.07443, 1.20681),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAADAAEAAAACAAMAAgAHAAMAAgAGAAcABgAFAAcABgAEAAUABAABAAUABAAAAAEAAgAEAAYAAgAAAAQABwABAAMABwAFAAEA"),
+"name": "MAT_PillarsNWedges",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAAAAAAAAAAAAAAD//wAAAAD//wAA//8AAP///////wAA//8AAAAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[resource]
+resource_name = "MESH_PillarsNWedges_Cube_014"
+_surfaces = [{
+"aabb": AABB(-1.23232, -0.537213, -0.603404, 2.46465, 1.07443, 1.20681),
+"attribute_data": PackedByteArray("nVh2QS+UDUW8G7gK00p2QX1wcCPyDbgKfo5wI6ujDUW8GzQatYBwI/l/cCPyDTQanVjVIS+UbCVBsSYa00rVIX1wEEN3oyYafo4QQ6ujbCVBsaoKtYAQQ/l/EEN3o6oK"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AgALAAUAAgAIAAsABgAVAAkABgASABUAFAARABcAFAAOABEADAADAA8ADAAAAAMABwANABMABwABAA0AFgAEAAoAFgAQAAQA"),
+"material": SubResource("StandardMaterial3D_yt2df"),
+"name": "MAT_PillarsNWedges",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP///78AAAAA//9U1QAAAAD//1TVAAD//////78AAP////9U1QAA/////1TVAAAAAAAA//8AAAAAAABU1QAAAAAAAFTVAAD//wAA//8AAP//AABU1QAA//8AAFTV//8AAP///7///wAA//9U1f//AAD//1TV/////////7////////9U1f///////1TV//8AAAAA/////wAAAABU1f//AAAAAFTV/////wAA////////AABU1f////8AAFTV/3//f1RVVFVUVaqq/3//f1TVqipUVaqq/z//v1VVVFVUVaqq/z//v1TVqipUVaqq/3//f1VVVFWqqlRV/3//f1TVqiqqqlRV/z//v1VVVFWqqlRV/z//v1TVqiqqqlRV")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_8nyc5")
