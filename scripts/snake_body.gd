@@ -56,13 +56,12 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 	
 	if is_on_floor():
+		speed = lerp(WALK_SPEED, COIL_SPEED, coil_amount)
 		if coil_amount >= 1.0:
-			speed = COIL_SPEED
 			head_collider.disabled = true
 			coil_collider.disabled = false
 			coil.visible = false
 		else:
-			speed = WALK_SPEED
 			head_collider.disabled = false
 			coil_collider.disabled = true
 			coil.visible = false
