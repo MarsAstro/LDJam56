@@ -198,7 +198,7 @@ script = ExtResource("2_cpupg")
 camera_pivot = NodePath("CameraPivot")
 camera = NodePath("CameraPivot/SpringArm3D/Camera3D")
 coil_pivot = NodePath("CoilPivot")
-coiling_speed = 0.2
+coiling_speed = 1.2
 
 [node name="Armature" type="Node3D" parent="Head"]
 transform = Transform3D(3.24, 0, 0, 0, 3.24, 0, 0, 0, 3.24, 0, 0.0947221, 0.0095872)
