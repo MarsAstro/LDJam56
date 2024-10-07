@@ -81,7 +81,7 @@ func _physics_process(delta: float) -> void:
 			velocity.z = lerp(velocity.z, direction.z * speed, delta * 7.0)
 			
 		var right_vector = global_transform.basis.x
-		velocity = velocity.rotated(right_vector, last_floor_angle / 20.0)
+		velocity = velocity.rotated(right_vector, last_floor_angle / 25.0)
 	else:
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 2.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 2.0)
