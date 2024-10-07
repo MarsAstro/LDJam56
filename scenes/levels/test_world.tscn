@@ -1,26 +1,24 @@
-[gd_scene load_steps=26 format=3 uid="uid://dxp5nkxcpkidt"]
+[gd_scene load_steps=24 format=3 uid="uid://dxp5nkxcpkidt"]
 
 [ext_resource type="PackedScene" uid="uid://0yjbffwi7ted" path="res://scenes/snake.tscn" id="1_f2yil"]
 [ext_resource type="Shader" path="res://shaders/floor_grid.gdshader" id="2_gnjr7"]
 [ext_resource type="Texture2D" uid="uid://dwkdjnd8l18kh" path="res://textures/square.png" id="3_f6wyl"]
-[ext_resource type="ArrayMesh" uid="uid://ijs227uvd57q" path="res://Processed Models/Flooring/BrickFloor.tres" id="4_o6y3q"]
-[ext_resource type="ArrayMesh" uid="uid://cdnpf38vy400f" path="res://Processed Models/Flooring/BrickRamp90.tres" id="5_mn1tu"]
-[ext_resource type="ArrayMesh" uid="uid://uxjjgmhdgw1v" path="res://Processed Models/Flooring/BrickRampJump.tres" id="6_6hwnb"]
-[ext_resource type="ArrayMesh" uid="uid://6rdouxksmt5q" path="res://Processed Models/Walls/Wall_BrickwTwoArches.tres" id="7_ix8wl"]
-[ext_resource type="ArrayMesh" uid="uid://cu3hmfwd728u2" path="res://Processed Models/Flooring/Floor_Corner.tres" id="8_otj1l"]
-[ext_resource type="ArrayMesh" uid="uid://bbyo77vixoo1x" path="res://Processed Models/Flooring/Floor_Square.tres" id="9_evkmb"]
-[ext_resource type="ArrayMesh" uid="uid://6t5ha4bhx7hg" path="res://Processed Models/Flooring/Floor_CurveUp.tres" id="10_wl28u"]
-[ext_resource type="ArrayMesh" uid="uid://b1y5uidiqhk7l" path="res://Processed Models/Flooring/Floor_CurveDown.tres" id="11_gb5e1"]
-[ext_resource type="ArrayMesh" uid="uid://ddamhc4r3urqi" path="res://Processed Models/Ornaments/Ornament_Square.tres" id="12_bj4ju"]
-[ext_resource type="ArrayMesh" uid="uid://bm4yppesdstq2" path="res://Processed Models/Pillars&Bricks/Brick.tres" id="13_d507x"]
-[ext_resource type="ArrayMesh" uid="uid://itgb3egws8gg" path="res://Processed Models/Pillars&Bricks/Pillar1_Hollow.tres" id="14_rmbab"]
-[ext_resource type="ArrayMesh" uid="uid://boda8oho7um4c" path="res://Processed Models/Pillars&Bricks/Pillar2_Bricks.tres" id="15_so65t"]
-[ext_resource type="ArrayMesh" uid="uid://k0buy01d0q6m" path="res://Processed Models/Pillars&Bricks/Wedge1.tres" id="16_omu3l"]
-[ext_resource type="ArrayMesh" uid="uid://cpp4t6nfhsmyw" path="res://Processed Models/Pillars&Bricks/Wedge2.tres" id="17_tpk7m"]
-[ext_resource type="ArrayMesh" uid="uid://pu43hxpxlfut" path="res://Processed Models/Stairs&Steps/AdjustableSteps.tres" id="18_g8qq0"]
-[ext_resource type="ArrayMesh" uid="uid://cjar76k6f7qrl" path="res://Processed Models/Stairs&Steps/SpiralSteps_Exterior.tres" id="19_manq2"]
-[ext_resource type="ArrayMesh" uid="uid://d2r2mn1e5sqdy" path="res://Processed Models/Stairs&Steps/SpiralSteps_Interior.tres" id="20_3j2t0"]
+[ext_resource type="PackedScene" uid="uid://cw4x7vkr41vul" path="res://collision_models/stairs_and_steps/adjustable_steps.tscn" id="5_1sek3"]
+[ext_resource type="PackedScene" uid="uid://b0p8afvyictm8" path="res://collision_models/flooring/brick_floor.tscn" id="6_mquu4"]
+[ext_resource type="PackedScene" uid="uid://c1dakp2g5t8t2" path="res://collision_models/walls/wall_brick_with_two_arches.tscn" id="7_prypw"]
+[ext_resource type="PackedScene" uid="uid://bpayos3b66kva" path="res://collision_models/flooring/floor_curve_up.tscn" id="8_3c6tr"]
+[ext_resource type="PackedScene" uid="uid://dr4i0hfxlmopv" path="res://collision_models/flooring/floor_curve_down.tscn" id="9_aj35v"]
+[ext_resource type="PackedScene" uid="uid://c6v4uoilrmrhh" path="res://collision_models/flooring/floor_square.tscn" id="10_t74fp"]
+[ext_resource type="PackedScene" uid="uid://cf5l05l4skslp" path="res://collision_models/flooring/floor_corner.tscn" id="12_7x0y7"]
+[ext_resource type="PackedScene" uid="uid://t3wgdprsq7ir" path="res://collision_models/stairs_and_steps/spiral_steps_exterior.tscn" id="13_lufju"]
+[ext_resource type="PackedScene" uid="uid://dnl2l6mhwlg4r" path="res://collision_models/stairs_and_steps/spiral_steps_interior.tscn" id="14_4lx4p"]
+[ext_resource type="PackedScene" uid="uid://cci8bpo2jxunj" path="res://collision_models/pillars_and_bricks/wedge_1.tscn" id="15_d0pp8"]
+[ext_resource type="PackedScene" uid="uid://dpaicaccpn1gj" path="res://collision_models/pillars_and_bricks/pillar_bricks.tscn" id="16_6efh7"]
+[ext_resource type="PackedScene" uid="uid://b8r218jak0pf" path="res://collision_models/flooring/brick_ramp_90.tscn" id="17_y3661"]
+[ext_resource type="PackedScene" uid="uid://5i614m546nc5" path="res://collision_models/ornaments/ornament_square.tscn" id="18_k2ftw"]
+[ext_resource type="PackedScene" uid="uid://cojy5fcxd5d5b" path="res://collision_models/flooring/brick_ramp_jump.tscn" id="21_bwawi"]
 [ext_resource type="PackedScene" uid="uid://b0e2ajl7ajeae" path="res://scenes/egg.tscn" id="21_p2gbb"]
+[ext_resource type="PackedScene" uid="uid://du2hqfqmopcxe" path="res://collision_models/pillars_and_bricks/pillar_hollow.tscn" id="23_rf0ae"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g0oeo"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -77,291 +75,161 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03296, -4.17053)
 use_collision = true
 size = Vector3(5.92969, 1, 3.11426)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Environment"]
-transform = Transform3D(5.29118, 0, 0, 0, 0.601578, 0.798814, 0, -0.798814, 0.601578, 0.663194, 2.26041, -12.9914)
-use_collision = true
-size = Vector3(2.35938, 9.90601, 1)
+[node name="BrickRampJump" parent="Environment" instance=ExtResource("21_bwawi")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.423995, -0.001884, -9.80769)
 
-[node name="BrickFloor" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7295, 0.0813894, 5.57685)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="AdjustableSteps4" parent="Environment" instance=ExtResource("5_1sek3")]
+transform = Transform3D(1.17989, 0, 0, 0, 1.83382, 0, 0, 0, 1, 11.2446, -0.00188304, -3.84507)
 
-[node name="BrickFloor2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3476, 0.0813894, 5.57685)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="AdjustableSteps5" parent="Environment" instance=ExtResource("5_1sek3")]
+transform = Transform3D(1.09671, 0, 0, 0, 1.01258, 0, 0, 0, 1, 14.3267, -0.00188304, -3.84507)
 
-[node name="BrickFloor3" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9922, 0.0813894, 5.57685)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="AdjustableSteps6" parent="Environment" instance=ExtResource("5_1sek3")]
+transform = Transform3D(0.977513, 0, 0, 0, 1.01258, 0, 0, 0, 1, 18.9952, -0.00188304, -3.84507)
 
-[node name="BrickRamp90" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0254, -0.00188304, 5.51768)
-mesh = ExtResource("5_mn1tu")
-skeleton = NodePath("")
+[node name="BrickFloor" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7565, 0.112613, 5.61962)
 
-[node name="BrickFloor4" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7295, 0.0813894, 9.39697)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="BrickFloor2" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7565, 0.112613, 9.48052)
 
-[node name="BrickFloor5" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3476, 0.0813894, 9.39697)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="BrickFloor3" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7565, 0.112613, 13.3189)
 
-[node name="BrickFloor6" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9922, 0.0813894, 9.39697)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="BrickFloor4" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7565, 0.112613, 17.1655)
 
-[node name="BrickRamp91" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0254, -0.00188304, 9.3378)
-mesh = ExtResource("5_mn1tu")
-skeleton = NodePath("")
+[node name="BrickFloor5" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3447, 0.112613, 5.61962)
 
-[node name="BrickFloor7" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7295, 0.0813894, 13.2332)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="BrickFloor6" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3447, 0.112613, 9.48052)
 
-[node name="BrickFloor8" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3476, 0.0813894, 13.2332)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="BrickFloor7" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3447, 0.112613, 13.3189)
 
-[node name="BrickFloor9" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9922, 0.0813894, 13.2332)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="BrickFloor8" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3447, 0.112613, 17.1655)
 
-[node name="BrickRamp92" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0254, -0.00188304, 13.174)
-mesh = ExtResource("6_6hwnb")
-skeleton = NodePath("")
+[node name="BrickFloor9" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9585, 0.112613, 5.61962)
 
-[node name="BrickFloor10" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7295, 0.0813894, 17.0377)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="BrickFloor10" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9585, 0.112613, 9.48052)
 
-[node name="BrickFloor11" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3476, 0.0813894, 17.0377)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="BrickFloor11" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9585, 0.112613, 13.3189)
 
-[node name="BrickFloor12" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9922, 0.0813894, 17.0377)
-mesh = ExtResource("4_o6y3q")
-skeleton = NodePath("../..")
+[node name="BrickFloor12" parent="Environment" instance=ExtResource("6_mquu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9585, 0.112613, 17.1655)
 
-[node name="BrickRamp93" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0254, -0.00188304, 16.9785)
-mesh = ExtResource("6_6hwnb")
-skeleton = NodePath("")
+[node name="WallBrickWithTwoArches" parent="Environment" instance=ExtResource("7_prypw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.1722, -0.00188114, 18.748)
 
-[node name="BrickRamp94" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.9218, 4.9654, 16.9785)
-mesh = ExtResource("6_6hwnb")
-skeleton = NodePath("")
+[node name="WallBrickWithTwoArches2" parent="Environment" instance=ExtResource("7_prypw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.1722, 9.51826, 18.748)
 
-[node name="WallBrickwTwoArches" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.1618, 4.84684, 18.9392)
-mesh = ExtResource("7_ix8wl")
-skeleton = NodePath("")
+[node name="WallBrickWithTwoArches3" parent="Environment" instance=ExtResource("7_prypw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.0967, -0.00188114, 18.748)
 
-[node name="WallBrickwTwoArches5" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-2.96245e-08, 0, 1, 0, 0.768982, 0, -0.677729, 0, -4.37114e-08, 29.4289, 2.83789, 7.49966)
-mesh = ExtResource("7_ix8wl")
-skeleton = NodePath("")
+[node name="WallBrickWithTwoArches4" parent="Environment" instance=ExtResource("7_prypw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.0967, 9.51826, 18.748)
 
-[node name="WallBrickwTwoArches2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.0747, 4.84684, 18.9392)
-mesh = ExtResource("7_ix8wl")
-skeleton = NodePath("")
+[node name="FloorCurveUp3" parent="Environment" instance=ExtResource("8_3c6tr")]
+transform = Transform3D(0.00452674, -0.435556, 0.90015, 0.0140576, 0.900098, 0.43546, -0.999891, 0.0106828, 0.0101974, 13.0654, 1.19053, 21.5542)
 
-[node name="WallBrickwTwoArches3" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.0747, 14.471, 18.9392)
-mesh = ExtResource("7_ix8wl")
-skeleton = NodePath("")
+[node name="FloorCurveUp4" parent="Environment" instance=ExtResource("8_3c6tr")]
+transform = Transform3D(-0.00452682, 0.435556, -0.90015, 0.0140576, 0.900098, 0.43546, 0.999891, -0.0106827, -0.0101975, 17.5111, 1.19053, 21.5542)
 
-[node name="WallBrickwTwoArches4" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.1477, 14.471, 18.9392)
-mesh = ExtResource("7_ix8wl")
-skeleton = NodePath("")
+[node name="FloorCurveDown2" parent="Environment" instance=ExtResource("9_aj35v")]
+transform = Transform3D(-0.0197733, 0, -0.999805, 0, 1, 0, 0.999805, 0, -0.0197733, 21.666, 1.43751, 21.6925)
 
-[node name="FloorCorner" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.40681, -0.00188352, 21.3969)
-mesh = ExtResource("8_otj1l")
-skeleton = NodePath("../..")
+[node name="FloorSquare" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(-3.79456e-08, -0.496398, 0.868095, -2.16983e-08, 0.868095, 0.496398, -1, 0, -4.37114e-08, 26.3209, 2.6578, 21.8188)
 
-[node name="FloorCorner2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 8.40682, -0.00188352, 1.06078)
-mesh = ExtResource("8_otj1l")
-skeleton = NodePath("../..")
+[node name="FloorSquare2" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(-3.79456e-08, -0.496398, 0.868095, -2.16983e-08, 0.868095, 0.496398, -1, 0, -4.37114e-08, 30.6469, 5.16551, 21.8188)
 
-[node name="FloorCorner3" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 28.7331, -0.00188352, 1.06078)
-mesh = ExtResource("8_otj1l")
-skeleton = NodePath("../..")
+[node name="FloorSquare3" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(-3.79456e-08, -0.496398, 0.868095, -2.16983e-08, 0.868095, 0.496398, -1, 0, -4.37114e-08, 34.9828, 7.67844, 21.8188)
 
-[node name="FloorSquare" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.40013, -0.00188304, 16.3116)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="FloorSquare4" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(-3.79456e-08, -0.496398, 0.868095, -2.16983e-08, 0.868095, 0.496398, -1, 0, -4.37114e-08, 39.4063, 10.2245, 21.8188)
 
-[node name="FloorSquare7" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-3.78552e-08, -0.5, 0.866025, -2.18557e-08, 0.866025, 0.5, -1, 0, -4.37114e-08, 26.4629, 2.55663, 21.4333)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="PillarHollow" parent="Environment" instance=ExtResource("23_rf0ae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.48102, -0.00188304, -0.445827)
 
-[node name="FloorSquare8" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-3.78552e-08, -0.5, 0.866025, -2.18557e-08, 0.866025, 0.5, -1, 0, -4.37114e-08, 30.7538, 5.03395, 21.4333)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="PillarHollow3" parent="Environment" instance=ExtResource("23_rf0ae")]
+transform = Transform3D(0.00938382, -0.774009, -0.633105, -0.990236, 0.0808702, -0.113546, 0.139085, 0.627989, -0.765693, 27.2113, -0.00188304, 0.697922)
 
-[node name="FloorSquare9" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-3.78552e-08, -0.5, 0.866025, -2.18557e-08, 0.866025, 0.5, -1, 0, -4.37114e-08, 35.0962, 7.54104, 21.4333)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="PillarHollow2" parent="Environment" instance=ExtResource("23_rf0ae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.48102, -0.00188304, 22.0027)
 
-[node name="FloorSquare10" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-3.78552e-08, -0.5, 0.866025, -2.18557e-08, 0.866025, 0.5, -1, 0, -4.37114e-08, 39.4116, 10.0326, 21.4333)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="FloorSquare5" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.41316, -0.00188304, 6.1614)
 
-[node name="FloorSquare11" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(0.866025, -0.5, 8.05285e-09, 0.5, 0.866025, 2.18557e-08, 0, 0, 1, 43.7292, 12.5253, 21.4333)
-mesh = ExtResource("8_otj1l")
-skeleton = NodePath("../..")
+[node name="FloorSquare6" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.41316, -0.00188304, 11.2755)
 
-[node name="FloorSquare12" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-2.98023e-08, -0.5, 0.866025, 0, 0.866025, 0.5, -1, 0, -6.16132e-08, 43.7292, 12.5253, 16.4028)
-mesh = ExtResource("8_otj1l")
-skeleton = NodePath("../..")
+[node name="FloorSquare7" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.41316, -0.00188304, 16.2518)
 
-[node name="FloorSquare2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.40013, -0.00188304, 11.2292)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="FloorSquare8" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 23.6275, -0.001884, 1.07462)
 
-[node name="FloorSquare3" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.40013, -0.00188304, 6.14185)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="FloorSquare9" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.5134, -0.001884, 1.07462)
 
-[node name="FloorSquare4" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.4739, -0.00188304, 1.0543)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="FloorSquare10" parent="Environment" instance=ExtResource("10_t74fp")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.5371, -0.001884, 1.07462)
 
-[node name="FloorSquare5" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.5563, -0.00188304, 1.0543)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="FloorCorner" parent="Environment" instance=ExtResource("12_7x0y7")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.61351, 0.037868, 21.2236)
 
-[node name="FloorSquare6" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 23.6437, -0.00188304, 1.0543)
-mesh = ExtResource("9_evkmb")
-skeleton = NodePath("../..")
+[node name="FloorCorner2" parent="Environment" instance=ExtResource("12_7x0y7")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 8.60324, -0.00188495, 1.25764)
 
-[node name="FloorCurveUp" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-3.8918e-08, -0.455296, 0.89034, -1.99016e-08, 0.89034, 0.455296, -1, 1.77636e-15, -4.37114e-08, 13.1836, 1.15061, 21.4463)
-mesh = ExtResource("10_wl28u")
-skeleton = NodePath("../..")
+[node name="FloorCorner3" parent="Environment" instance=ExtResource("12_7x0y7")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 28.5451, -0.00188591, 1.26139)
 
-[node name="FloorCurveUp2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-3.86965e-08, 0.465074, 0.885272, 2.0329e-08, 0.885272, -0.465074, -1, 0, -4.37114e-08, 17.5734, 1.16518, 21.4463)
-mesh = ExtResource("10_wl28u")
-skeleton = NodePath("../..")
+[node name="FloorCorner4" parent="Environment" instance=ExtResource("12_7x0y7")]
+transform = Transform3D(0.857805, -0.513976, -1.49983e-07, 0.513976, 0.857805, -8.98663e-08, 1.74846e-07, 0, 1, 43.6297, 12.72, 21.6181)
 
-[node name="FloorCurveDown" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21.7247, 1.31882, 21.443)
-mesh = ExtResource("11_gb5e1")
-skeleton = NodePath("../..")
+[node name="FloorCorner5" parent="Environment" instance=ExtResource("12_7x0y7")]
+transform = Transform3D(0.00952599, -0.50651, 0.862181, -0.0101506, 0.862127, 0.506591, -0.999903, -0.0135775, 0.00307122, 43.6145, 12.72, 17.0181)
 
-[node name="OrnamentSquare" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1.86715, 0, 0, 0, 1.5253, 0, 0, 0, 1.86715, 17.6406, 0.11373, 11.2694)
-mesh = ExtResource("12_bj4ju")
-skeleton = NodePath("../..")
+[node name="SpiralStepsExterior" parent="Environment" instance=ExtResource("13_lufju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.1793, -0.001884, -24.6357)
 
-[node name="Brick" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9614, 0.225001, 18.3386)
-mesh = ExtResource("13_d507x")
-skeleton = NodePath("../..")
+[node name="SpiralStepsExterior2" parent="Environment" instance=ExtResource("13_lufju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.1793, 21.8752, -24.6357)
 
-[node name="Pillar1Hollow" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.51555, 3.50726, -0.508784)
-mesh = ExtResource("14_rmbab")
-skeleton = NodePath("../..")
+[node name="SpiralStepsInterior" parent="Environment" instance=ExtResource("14_4lx4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.8487, -0.00188304, 45.5745)
 
-[node name="Pillar1Hollow2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.51555, 3.50726, 23.2604)
-mesh = ExtResource("14_rmbab")
-skeleton = NodePath("../..")
+[node name="SpiralStepsInterior2" parent="Environment" instance=ExtResource("14_4lx4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.8487, 21.9136, 45.5745)
 
-[node name="Pillar1Hollow3" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(0.678378, -0.734701, 0.00430859, -3.72529e-09, -0.00586432, -0.999983, 0.734713, 0.678366, -0.00397821, 25.6055, 1.16527, 2.90674)
-mesh = ExtResource("14_rmbab")
-skeleton = NodePath("../..")
+[node name="Wedge1" parent="Environment" instance=ExtResource("15_d0pp8")]
+transform = Transform3D(-0.755385, 0, 0.655281, 0, 1, 0, -0.655281, 0, -0.755385, 22.6716, -0.29599, 4.32861)
 
-[node name="Pillar2Bricks" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(0.767209, 0, 0, 0, 0.767209, 0, 0, 0, 0.767209, 15.5274, 2.48821, 18.8921)
-mesh = ExtResource("15_so65t")
-skeleton = NodePath("../..")
+[node name="PillarBricks" parent="Environment" instance=ExtResource("16_6efh7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1034, -0.00188304, 18.5949)
 
-[node name="Wedge1" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-0.723063, 0, 0.690782, 0, 1, 0, -0.690782, 0, -0.723063, 22.183, -0.00188304, 4.15453)
-mesh = ExtResource("16_omu3l")
-skeleton = NodePath("../..")
+[node name="BrickRamp90" parent="Environment" instance=ExtResource("17_y3661")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0799, 0.049032, 9.31792)
 
-[node name="Wedge2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(-0.993471, 0, 0.114088, 0, 1, 0, -0.114088, 0, -0.993471, 15.9624, -0.00188066, 19.5709)
-mesh = ExtResource("17_tpk7m")
-skeleton = NodePath("../..")
+[node name="BrickRamp91" parent="Environment" instance=ExtResource("17_y3661")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0799, 0.049032, 5.49876)
 
-[node name="AdjustableSteps" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0369, -0.00188304, -3.496)
-mesh = ExtResource("18_g8qq0")
-skeleton = NodePath("../..")
-blend_shapes/Depth = 1.0
-blend_shapes/Height = 1.0
+[node name="BrickRampJump2" parent="Environment" instance=ExtResource("21_bwawi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.096, 0.0249846, 13.1398)
 
-[node name="AdjustableSteps2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7784, -0.00188304, -3.496)
-mesh = ExtResource("18_g8qq0")
-skeleton = NodePath("../..")
-blend_shapes/Depth = 1.0
-blend_shapes/Height = 0.0
+[node name="BrickRampJump3" parent="Environment" instance=ExtResource("21_bwawi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.096, 0.0249846, 16.9506)
 
-[node name="AdjustableSteps3" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.919, -0.00188304, -3.496)
-mesh = ExtResource("18_g8qq0")
-skeleton = NodePath("../..")
-blend_shapes/Depth = 0.0
-blend_shapes/Height = 0.0
-
-[node name="SpiralStepsExterior" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(0.29493, 0, 0.886024, 0, 0.933822, 0, -0.886024, 0, 0.29493, 49.6218, 9.40757, -19.3509)
-mesh = ExtResource("19_manq2")
-skeleton = NodePath("../..")
-
-[node name="SpiralStepsExterior2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(0.29493, 0, 0.886024, 0, 0.933822, 0, -0.886024, 0, 0.29493, 49.6218, 29.8835, -19.3509)
-mesh = ExtResource("19_manq2")
-skeleton = NodePath("../..")
-
-[node name="SpiralStepsInterior" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(0.933822, 0, 0, 0, 0.933822, 0, 0, 0, 0.933822, 53.1298, 10.1654, 38.6042)
-mesh = ExtResource("20_3j2t0")
-skeleton = NodePath("../..")
-
-[node name="SpiralStepsInterior2" type="MeshInstance3D" parent="Environment"]
-transform = Transform3D(0.933822, 0, 0, 0, 0.933822, 0, 0, 0, 0.933822, 53.1298, 30.535, 38.6042)
-mesh = ExtResource("20_3j2t0")
-skeleton = NodePath("../..")
+[node name="OrnamentSquare" parent="Environment" instance=ExtResource("18_k2ftw")]
+transform = Transform3D(1.79503, 0, 0, 0, 1.79503, 0, 0, 0, 1.79503, 17.2165, 0.225489, 11.239)
 
 [node name="Pickups" type="Node" parent="."]
 
@@ -390,25 +258,25 @@ transform = Transform3D(0.00150557, 0, -0.134992, 0, 0.135, 0, 0.134992, 0, 0.00
 transform = Transform3D(0.00150557, 0, -0.134992, 0, 0.135, 0, 0.134992, 0, 0.00150557, -0.420198, 0.190087, -6.57408)
 
 [node name="Egg9" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(-0.0205661, -0.0276062, -0.130537, -0.0818362, 0.106927, -0.00971975, 0.10538, 0.0776501, -0.0330241, 0.0700049, 2.10944, -11.4354)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.341169, 0.93545, -13.8561)
 
 [node name="Egg10" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(-0.0205661, -0.0276062, -0.130537, -0.0818362, 0.106927, -0.00971975, 0.10538, 0.0776501, -0.0330241, -0.03078, 1.7084, -10.919)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.333791, 0.737245, -13.1977)
 
 [node name="Egg11" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(-0.0205661, -0.0276062, -0.130537, -0.0818362, 0.106927, -0.00971975, 0.10538, 0.0776501, -0.0330241, -0.155362, 1.21267, -10.2807)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.32467, 0.540083, -12.4524)
 
 [node name="Egg12" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(-0.0205661, -0.0276062, -0.130537, -0.0818362, 0.106927, -0.00971975, 0.10538, 0.0776501, -0.0330241, -0.301741, 0.630197, -9.53064)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.313955, 0.368607, -11.5406)
 
 [node name="Egg13" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(-0.0205661, -0.0276062, -0.130537, -0.0818362, 0.106927, -0.00971975, 0.10538, 0.0776501, -0.0330241, 0.249349, 7.30472, -17.3344)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.341169, 1.96426, -16.9325)
 
 [node name="Egg14" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(-0.0205661, -0.0276062, -0.130537, -0.0818362, 0.106927, -0.00971975, 0.10538, 0.0776501, -0.0330241, 0.148564, 6.90368, -16.818)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.333791, 2.38543, -16.3048)
 
 [node name="Egg15" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(-0.0205661, -0.0276062, -0.130537, -0.0818362, 0.106927, -0.00971975, 0.10538, 0.0776501, -0.0330241, 0.0239824, 6.40795, -16.1797)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.32467, 1.65431, -15.5288)
 
 [node name="Egg16" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(-0.0205661, -0.0276062, -0.130537, -0.0818362, 0.106927, -0.00971975, 0.10538, 0.0776501, -0.0330241, -0.122397, 5.82548, -15.4296)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.313955, 1.22913, -14.617)

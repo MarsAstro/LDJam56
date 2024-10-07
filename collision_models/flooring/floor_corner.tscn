@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf5l05l4skslp"]
+
+[ext_resource type="ArrayMesh" uid="uid://cu3hmfwd728u2" path="res://editable_meshes/Flooring/Floor_Corner.tres" id="1_wtyxn"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fld5x"]
+points = PackedVector3Array(2.50883, 0.219321, 2.50604, -2.57837, -0.18448, -2.58017, -2.57837, -0.18448, 2.50604, 2.58927, -0.18448, -2.49974, -2.57837, 0.219321, -2.58017, 2.50883, 0.219321, -2.58017, 2.50883, -0.18448, 2.58647, -2.57837, 0.219321, 2.50604, 2.58927, 0.219321, 2.42511, -2.41698, 0.219321, 2.58647, 2.50883, -0.18448, -2.58017, -2.49742, -0.18448, 2.58647, 2.58927, -0.18448, 2.50604, 2.58927, 0.219321, -2.41881, 2.42788, 0.219321, 2.58647)
+
+[node name="FloorCorner" type="StaticBody3D"]
+
+[node name="FloorCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.211348, 0, 0.197021)
+mesh = ExtResource("1_wtyxn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.211348, 0, 0.197021)
+shape = SubResource("ConvexPolygonShape3D_fld5x")

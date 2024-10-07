@@ -1,11 +1,11 @@
 [gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://bbyo77vixoo1x"]
 
-[ext_resource type="Texture2D" uid="uid://b6tl546o76pmx" path="res://Models/MESH_FloorPieces_MAT_MainFloor_Base_color.png" id="1_05lpm"]
+[ext_resource type="Texture2D" uid="uid://b6tl546o76pmx" path="res://models/MESH_FloorPieces_MAT_MainFloor_Base_color.png" id="1_vrfxt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o20t8"]
 resource_name = "MAT_MainFloor"
 cull_mode = 2
-albedo_texture = ExtResource("1_05lpm")
+albedo_texture = ExtResource("1_vrfxt")
 roughness = 0.5
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qyj0n"]

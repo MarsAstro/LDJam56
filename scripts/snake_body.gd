@@ -10,6 +10,7 @@ const DEADZONE: float = 0.1
 
 var speed: float
 var coil_amount: float
+var last_floor_angle: float
 
 @export var camera_pivot: Node3D
 @export var camera: Camera3D
@@ -78,8 +79,14 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity.x = lerp(velocity.x, direction.x * speed, delta * 7.0)
 			velocity.z = lerp(velocity.z, direction.z * speed, delta * 7.0)
+			
+		var right_vector = global_transform.basis.x
+		velocity = velocity.rotated(right_vector, last_floor_angle / 20.0)
 	else:
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 2.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 2.0)
 
 	move_and_slide()
+	
+	if is_on_floor():
+		last_floor_angle = get_floor_angle()

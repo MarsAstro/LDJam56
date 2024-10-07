@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6x084e3b62h3"]
+
+[ext_resource type="ArrayMesh" uid="uid://bm4yppesdstq2" path="res://editable_meshes/Pillars&Bricks/Brick.tres" id="1_hje0s"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jclbi"]
+points = PackedVector3Array(1.20086, 0.516202, 0.6034, -1.20715, -0.5372, -0.600606, -1.20086, -0.534448, 0.6034, -1.21274, 0.521502, -0.6034, 1.20715, -0.5372, -0.600606, 1.21274, 0.521398, -0.6034, -1.20086, 0.516305, 0.6034, 1.20086, -0.534448, 0.6034, 1.17475, 0.521502, -0.6034)
+
+[node name="Brick" type="StaticBody3D"]
+
+[node name="Brick" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_hje0s")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_jclbi")

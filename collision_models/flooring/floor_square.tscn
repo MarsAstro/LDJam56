@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6v4uoilrmrhh"]
+
+[ext_resource type="ArrayMesh" uid="uid://bbyo77vixoo1x" path="res://editable_meshes/Flooring/Floor_Square.tres" id="1_wc51m"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vy1sj"]
+points = PackedVector3Array(-2.57987, 0.218836, 2.33841, 2.58137, -0.184426, 2.58043, 2.58137, -0.184426, -2.58133, -2.57987, -0.184426, 2.41874, -2.49903, 0.218836, -2.58133, 2.58137, 0.218836, -2.58133, -2.57987, -0.184426, -2.49998, 2.50054, 0.218836, 2.58043, -2.25704, 0.218836, 2.58043, -2.4182, -0.184426, 2.58043, -2.49903, -0.184426, -2.58133, 2.58137, 0.218836, 2.49958, -2.57987, 0.218836, -2.49998, -2.49903, 0.218836, 2.49958)
+
+[node name="FloorSquare" type="StaticBody3D"]
+
+[node name="FloorSquare" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_wc51m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_vy1sj")

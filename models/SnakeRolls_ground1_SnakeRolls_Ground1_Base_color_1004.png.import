@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6vxe1csg4tfb"
-path.s3tc="res://.godot/imported/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1003.png-8325a54ec26a0aa94df9eb231a0ed066.s3tc.ctex"
+uid="uid://cqmq8gqa1skgg"
+path.s3tc="res://.godot/imported/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1004.png-9a99192eb057c6ef211bb67c9d322f1c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "af5db026640bd65f67d05250963d7925"
+"md5": "8c45fb1912b25c0c4af0651fffb03ad6"
 }
 
 [deps]
 
-source_file="res://Models/Ground Meshes/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1003.png"
-dest_files=["res://.godot/imported/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1003.png-8325a54ec26a0aa94df9eb231a0ed066.s3tc.ctex"]
+source_file="res://models/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1004.png"
+dest_files=["res://.godot/imported/SnakeRolls_ground1_SnakeRolls_Ground1_Base_color_1004.png-9a99192eb057c6ef211bb67c9d322f1c.s3tc.ctex"]
 
 [params]
 

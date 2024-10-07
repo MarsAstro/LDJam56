@@ -201,6 +201,9 @@ body_path = NodePath("BodyPath")
 body_path_follow = NodePath("BodyPath/PathFollow3D")
 
 [node name="Head" type="CharacterBody3D" parent="." node_paths=PackedStringArray("camera_pivot", "camera", "coil_pivot")]
+floor_stop_on_slope = false
+floor_block_on_wall = false
+floor_max_angle = 1.55334
 script = ExtResource("2_cpupg")
 camera_pivot = NodePath("CameraPivot")
 camera = NodePath("CameraPivot/SpringArm3D/Camera3D")
@@ -212,7 +215,6 @@ transform = Transform3D(3.24, 0, 0, 0, 3.24, 0, 0, 0, 3.24, 0, 0.0947221, 0.0095
 visible = false
 
 [node name="Skeleton3D" type="Skeleton3D" parent="Head/Armature"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 bones/0/name = "Bone"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 1.50996e-07, 1.50996e-07, 0, -1, 0, 1, 0, 0, 0, 0)
@@ -372,7 +374,7 @@ mesh = SubResource("SphereMesh_vrg6j")
 curve = SubResource("Curve3D_85je7")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="BodyPath"]
-transform = Transform3D(-0.902302, -0.0253155, 0.430346, 0, 0.998257, 0.0587245, -0.43109, 0.052987, -0.900743, -0.198771, 1.21663, -0.14136)
+transform = Transform3D(-0.902302, -0.0253157, 0.430345, -1.86263e-09, 0.998257, 0.0587251, -0.431089, 0.0529876, -0.900744, -0.198771, 1.21663, -0.14136)
 
 [node name="BodyPolygon" type="CSGPolygon3D" parent="."]
 polygon = PackedVector2Array(-0.0271923, -0.0334124, -0.0362521, -0.00449719, -0.0312265, 0.0237834, -0.000937382, 0.0376443, 0.029905, 0.0249173, 0.0405791, -0.00113798, 0.0336193, -0.0333862, -0.000152448, -0.0439177)

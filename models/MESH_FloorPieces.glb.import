@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bhs17f250xb1u"
-path="res://.godot/imported/SnakeRolls_ground1.glb-5931bb31cb119b0a830cb902150fd2b3.scn"
+uid="uid://vl418x7ecddy"
+path="res://.godot/imported/MESH_FloorPieces.glb-ee49c173151c19f4f36de9a7906acc96.scn"
 
 [deps]
 
-source_file="res://Models/Ground Meshes/SnakeRolls_ground1.glb"
-dest_files=["res://.godot/imported/SnakeRolls_ground1.glb-5931bb31cb119b0a830cb902150fd2b3.scn"]
+source_file="res://models/MESH_FloorPieces.glb"
+dest_files=["res://.godot/imported/MESH_FloorPieces.glb-ee49c173151c19f4f36de9a7906acc96.scn"]
 
 [params]
 

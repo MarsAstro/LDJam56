@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw4x7vkr41vul"]
+
+[ext_resource type="ArrayMesh" uid="uid://pu43hxpxlfut" path="res://editable_meshes/Stairs&Steps/AdjustableSteps.tres" id="1_rj17p"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j3bet"]
+points = PackedVector3Array(0.0160643, -0.00348923, -2.09455, 4.0185, 0.980546, 2.03875, 0.154914, -0.0880968, 2.10504, 4.0865, 0.860994, -1.89399, -0.251494, 0.115417, -2.02989, 3.61172, 1.0644, -1.96194, -0.251494, 0.115417, 1.90161, 0.697216, -0.0201837, -0.945193, 4.0865, 0.860994, 2.03709, 2.73053, 0.860882, 2.10504, 0.154914, -0.0880968, -2.09784, 1.51046, 0.183217, 1.63022, 3.67966, 0.725394, -1.01272, 3.74719, 1.0644, -2.09784, 3.74719, 1.0644, 2.173, 2.79805, 0.52188, -2.09784, -0.119719, -0.0530877, -1.90635, 0.222436, 0.251017, 1.42721, 2.73053, 0.860882, -2.09784, 0.832685, 0.318818, 2.173, 3.9506, 0.860994, 2.173, -0.0485024, 0.115417, -2.1658, 3.47582, 0.793081, -2.1658, 3.67966, 0.725394, 0.88444, 3.94546, 1.02693, -1.83413, 3.61172, 1.0644, 2.03709, -0.0655596, -0.0386988, 1.73891, 0.222436, -0.0880968, 2.03709, 4.0865, 0.928682, -1.96194, 2.79805, 0.860882, -2.1658, 0.968579, 0.115417, 2.173, 0.222436, -0.0880968, -2.02989)
+
+[node name="AdjustableSteps" type="StaticBody3D"]
+
+[node name="AdjustableSteps" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_rj17p")
+blend_shapes/Depth = 0.0
+blend_shapes/Height = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_j3bet")

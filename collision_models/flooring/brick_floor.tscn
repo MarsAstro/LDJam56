@@ -1,16 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2v8co30gpvkd"]
+[gd_scene load_steps=3 format=3 uid="uid://b0p8afvyictm8"]
 
-[ext_resource type="ArrayMesh" uid="uid://ijs227uvd57q" path="res://Processed Models/Flooring/BrickFloor.tres" id="1_36vxb"]
+[ext_resource type="ArrayMesh" uid="uid://ijs227uvd57q" path="res://editable_meshes/Flooring/BrickFloor.tres" id="1_8ueq0"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_x0cux"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p6ekt"]
 points = PackedVector3Array(-1.82299, 0.0989419, -1.94304, 1.80516, 0.0989419, 1.92774, 1.80516, -0.142881, 1.92774, 1.80516, 0.0989419, -1.94304, -1.82299, 0.159405, 1.74625, -1.82299, -0.142881, -1.94304, -1.82299, -0.142881, 1.92774, 1.80516, -0.142881, -1.94304, 0.293315, 0.159405, -1.94304, -0.431888, 0.159405, 1.56476, -1.82299, 0.0989419, 1.92774, -0.250765, 0.159405, -1.94304, -1.82299, 0.159405, 1.50414, 0.293315, 0.159405, -1.51944, -0.613366, 0.159405, 1.74625)
 
-[node name="BrickFloor" type="Node3D"]
+[node name="BrickFloor" type="StaticBody3D"]
 
 [node name="BrickFloor" type="MeshInstance3D" parent="."]
-mesh = ExtResource("1_36vxb")
+mesh = ExtResource("1_8ueq0")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="BrickFloor"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="BrickFloor/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_x0cux")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_p6ekt")
