@@ -30,7 +30,7 @@ func _ready() -> void:
 		body_path.add_child(new_node)
 		path_follow_nodes.append(new_node)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var head_pos = snake_body.global_position
 	var front_pos = slither_snake_front_body.global_position.slerp(coil_snake_front_body.global_position, snake_body.coil_amount)
 	var back_pos = slither_snake_back_body.global_position.slerp(coil_snake_back_body.global_position, snake_body.coil_amount)
@@ -56,7 +56,7 @@ func _process(delta: float) -> void:
 		var percent: float = i / bone_count
 		path_follow_nodes[i].progress_ratio = percent
 		
-		var rest = snake_skeleton.get_bone_global_rest(i)
+		var rest = snake_skeleton.get_bone_global_rest(int(i))
 		var new_pose = rest.translated(path_follow_nodes[i].global_position)
 		
-		snake_skeleton.set_bone_global_pose(i, new_pose)
+		snake_skeleton.set_bone_global_pose(int(i), new_pose)

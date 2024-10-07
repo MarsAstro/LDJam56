@@ -1,8 +1,10 @@
-[gd_scene load_steps=24 format=3 uid="uid://dxp5nkxcpkidt"]
+[gd_scene load_steps=27 format=3 uid="uid://dxp5nkxcpkidt"]
 
 [ext_resource type="PackedScene" uid="uid://0yjbffwi7ted" path="res://scenes/snake.tscn" id="1_f2yil"]
 [ext_resource type="Shader" path="res://shaders/floor_grid.gdshader" id="2_gnjr7"]
+[ext_resource type="PackedScene" uid="uid://db44n8jjn2cro" path="res://scenes/hud.tscn" id="2_yefp2"]
 [ext_resource type="Texture2D" uid="uid://dwkdjnd8l18kh" path="res://textures/square.png" id="3_f6wyl"]
+[ext_resource type="PackedScene" uid="uid://b68ho0ak7kmys" path="res://scenes/killzone.tscn" id="3_onypm"]
 [ext_resource type="PackedScene" uid="uid://cw4x7vkr41vul" path="res://collision_models/stairs_and_steps/adjustable_steps.tscn" id="5_1sek3"]
 [ext_resource type="PackedScene" uid="uid://b0p8afvyictm8" path="res://collision_models/flooring/brick_floor.tscn" id="6_mquu4"]
 [ext_resource type="PackedScene" uid="uid://c1dakp2g5t8t2" path="res://collision_models/walls/wall_brick_with_two_arches.tscn" id="7_prypw"]
@@ -46,6 +48,8 @@ adjustment_brightness = 0.92
 adjustment_contrast = 1.08
 adjustment_saturation = 1.42
 
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_hqqci"]
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_5rdh2"]
 render_priority = 0
 shader = ExtResource("2_gnjr7")
@@ -61,6 +65,14 @@ transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 shadow_enabled = true
 
 [node name="Snake" parent="." instance=ExtResource("1_f2yil")]
+
+[node name="HUD" parent="." instance=ExtResource("2_yefp2")]
+
+[node name="Killzone" parent="." instance=ExtResource("3_onypm")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Killzone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.83559, 0)
+shape = SubResource("WorldBoundaryShape3D_hqqci")
 
 [node name="Environment" type="Node" parent="."]
 
@@ -270,7 +282,7 @@ transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474
 transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.313955, 0.368607, -11.5406)
 
 [node name="Egg13" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.341169, 1.96426, -16.9325)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.341169, 3.3991, -16.9325)
 
 [node name="Egg14" parent="Pickups" instance=ExtResource("21_p2gbb")]
 transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.333791, 2.38543, -16.3048)
@@ -279,4 +291,4 @@ transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474
 transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.32467, 1.65431, -15.5288)
 
 [node name="Egg16" parent="Pickups" instance=ExtResource("21_p2gbb")]
-transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.313955, 1.22913, -14.617)
+transform = Transform3D(0.00150557, 0, -0.134992, -0.042581, 0.128108, -0.000474908, 0.1281, 0.0425836, 0.00142871, -0.313955, 1.19524, -14.617)
