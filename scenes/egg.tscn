@@ -5,7 +5,7 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_uymrk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fy6sr"]
-albedo_color = Color(1, 1, 2, 1)
+albedo_color = Color(4, 1, 2, 1)
 
 [sub_resource type="SphereMesh" id="SphereMesh_baua6"]
 material = SubResource("StandardMaterial3D_fy6sr")
@@ -15,6 +15,7 @@ transform = Transform3D(0.135, 0, 0, 0, 0.135, 0, 0, 0, 0.135, 0, 0, 0)
 script = ExtResource("1_upfch")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.86261, 0, 0, 0, 1.86261, 0, 0, 0, 1.86261, 0, 0, 0)
 shape = SubResource("SphereShape3D_uymrk")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
