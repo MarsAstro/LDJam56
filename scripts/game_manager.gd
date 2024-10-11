@@ -9,7 +9,7 @@ var time_elapsed: float = 0.0
 func _ready() -> void:
 	GameManager.time_elapsed = 0.0
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
 		

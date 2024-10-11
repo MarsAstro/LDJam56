@@ -19,6 +19,7 @@ var last_floor_angle: float
 
 @onready var coil_collider: CollisionShape3D = $CoilCollider
 @onready var head_collider: CollisionShape3D = $HeadCollider
+@onready var ray_cast: RayCast3D = $RayCast3D
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -40,8 +41,9 @@ func _process(delta: float) -> void:
 	if cameraVerticalInput > DEADZONE or cameraVerticalInput < -DEADZONE:
 		camera_pivot.rotate_x(cameraVerticalInput * delta * GAMEPAD_SENSITIVITY)
 		camera_pivot.rotation.x = clamp(camera_pivot.rotation.x, deg_to_rad(-60), deg_to_rad(15))
-		
-	if Input.is_action_pressed("coil"):
+	
+	var is_coiling = Input.is_action_pressed("coil") and not ray_cast.is_colliding()
+	if is_coiling:
 		coil_amount = clamp(coil_amount + delta * coiling_speed, 0.0, 1.0)
 		coil_pivot.rotate_x(-delta * 10.0 * coil_amount)
 	else:
@@ -69,8 +71,9 @@ func _physics_process(delta: float) -> void:
 			coil_collider.disabled = true
 	
 	var input_dir := Input.get_vector("move_right", "move_left", "move_backward", "move_forward")
-	var strafe_speed: float = 0.0 if Input.is_action_pressed("coil") else 1.0
-	var forward_speed: float = -1.0 if Input.is_action_pressed("coil") else -input_dir.y
+	var is_coiling = Input.is_action_pressed("coil") and not ray_cast.is_colliding()
+	var strafe_speed: float = 0.0 if is_coiling else 1.0
+	var forward_speed: float = -1.0 if is_coiling else -input_dir.y
 	var direction := (transform.basis * Vector3(-input_dir.x * strafe_speed, 0, forward_speed)).normalized()
 	if is_on_floor():
 		if direction:

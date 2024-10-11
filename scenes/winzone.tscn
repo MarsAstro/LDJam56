@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://scripts/winzone.gd" id="1_hbwdi"]
 
 [node name="Winzone" type="Area3D"]
+collision_mask = 2
 script = ExtResource("1_hbwdi")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
