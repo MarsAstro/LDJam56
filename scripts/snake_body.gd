@@ -16,6 +16,8 @@ var last_floor_angle: float
 @export var camera: Camera3D
 @export var coil_pivot: Node3D
 @export var coiling_speed: float = 4
+@export var slither_floor_angle: float = 90
+@export var rolling_floor_angle: float = 75
 
 @onready var coil_collider: CollisionShape3D = $CoilCollider
 @onready var head_collider: CollisionShape3D = $HeadCollider
@@ -52,6 +54,8 @@ func _process(delta: float) -> void:
 		
 		if (current_x_rot >= 0.01 or current_x_rot <= -0.01):
 			coil_pivot.rotation.x = move_toward(current_x_rot, 0.0, delta * 10.0)
+	
+	floor_max_angle = lerp(slither_floor_angle, rolling_floor_angle, coil_amount)
 
 
 func _physics_process(delta: float) -> void:
