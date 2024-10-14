@@ -72,40 +72,40 @@ shadow_enabled = true
 transform = Transform3D(18.864, 0, 0, 0, 18.864, 0, 0, 0, 18.864, -0.497284, -2.42294, -15.1823)
 
 [node name="BrickFloor" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.63191, 0.112613, -17.162)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.63191, 0.1, -17.162)
 
 [node name="BrickFloor2" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.771009, 0.112613, -17.162)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.771009, 0.1, -17.162)
 
 [node name="BrickFloor3" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.06737, 0.112613, -17.162)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.06737, 0.1, -17.162)
 
 [node name="BrickFloor4" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.91397, 0.112613, -17.162)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.91397, 0.1, -17.162)
 
 [node name="BrickFloor5" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.63191, 0.112613, -20.7502)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.63191, 0.1, -20.7502)
 
 [node name="BrickFloor6" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.771009, 0.112613, -20.7502)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.771009, 0.1, -20.7502)
 
 [node name="BrickFloor7" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.06737, 0.112613, -20.7502)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.06737, 0.1, -20.7502)
 
 [node name="BrickFloor8" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.91397, 0.112613, -20.7502)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.91397, 0.1, -20.7502)
 
 [node name="BrickFloor9" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.63191, 0.112613, -24.364)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.63191, 0.1, -24.364)
 
 [node name="BrickFloor10" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.771009, 0.112613, -24.364)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.771009, 0.1, -24.364)
 
 [node name="BrickFloor11" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.06737, 0.112613, -24.364)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.06737, 0.1, -24.364)
 
 [node name="BrickFloor12" parent="Environment" instance=ExtResource("6_mquu4")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.91397, 0.112613, -24.364)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.91397, 0.1, -24.364)
 
 [node name="WallBrickWithTwoArches" parent="Environment" instance=ExtResource("7_prypw")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.49647, -0.00188112, -29.5777)

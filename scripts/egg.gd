@@ -5,11 +5,16 @@ extends Area3D
 
 var has_target: bool = false
 var target: SnakeBody
+var current_magnet_speed: float
+
+func _ready() -> void:
+	current_magnet_speed = magnet_speed
 
 func _process(delta: float) -> void:
 	if has_target:
 		var direction = (target.global_position - position).normalized()
-		position += direction * magnet_speed * delta
+		position += direction * current_magnet_speed * delta
+		current_magnet_speed += delta * 5.0
 
 func _on_body_entered(body: SnakeBody) -> void:
 	has_target = true

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/egg.gd" id="1_upfch"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_uymrk"]
-radius = 2.74852
+radius = 2.97847
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fy6sr"]
 albedo_color = Color(4, 1, 2, 1)

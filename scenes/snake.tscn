@@ -202,9 +202,11 @@ body_path_follow = NodePath("BodyPath/PathFollow3D")
 
 [node name="Head" type="CharacterBody3D" parent="." node_paths=PackedStringArray("camera_pivot", "camera", "coil_pivot")]
 collision_layer = 2
+wall_min_slide_angle = 2.0944
 floor_stop_on_slope = false
 floor_block_on_wall = false
 floor_max_angle = 1.309
+floor_snap_length = 1.0
 script = ExtResource("2_cpupg")
 camera_pivot = NodePath("CameraPivot")
 camera = NodePath("CameraPivot/SpringArm3D/Camera3D")
