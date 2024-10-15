@@ -1,6 +1,6 @@
 [gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://b1y5uidiqhk7l"]
 
-[ext_resource type="Texture2D" uid="uid://b6tl546o76pmx" path="res://models/MESH_FloorPieces_MAT_MainFloor_Base_color.png" id="1_430cb"]
+[ext_resource type="Texture2D" uid="uid://b6tl546o76pmx" path="res://Models/Bricks&Stone/MESH_FloorPieces_MAT_MainFloor_Base_color.png" id="1_430cb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o20t8"]
 resource_name = "MAT_MainFloor"
