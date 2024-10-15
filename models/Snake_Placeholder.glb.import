@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bk0oqvtwbhya"
-path="res://.godot/imported/Snake_Placeholder.glb-5b91b0dad61cb16f517081a6cafb3b3f.scn"
+path="res://.godot/imported/Snake_Placeholder.glb-ca70c6de922725093a73c5eac23e29e4.scn"
 
 [deps]
 
-source_file="res://Models/Snake_Placeholder.glb"
-dest_files=["res://.godot/imported/Snake_Placeholder.glb-5b91b0dad61cb16f517081a6cafb3b3f.scn"]
+source_file="res://models/Snake_Placeholder.glb"
+dest_files=["res://.godot/imported/Snake_Placeholder.glb-ca70c6de922725093a73c5eac23e29e4.scn"]
 
 [params]
 

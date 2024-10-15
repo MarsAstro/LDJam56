@@ -55,7 +55,7 @@ func _process(delta: float) -> void:
 		if (current_x_rot >= 0.01 or current_x_rot <= -0.01):
 			coil_pivot.rotation.x = move_toward(current_x_rot, 0.0, delta * 10.0)
 	
-	floor_max_angle = lerp(slither_floor_angle, rolling_floor_angle, coil_amount)
+	floor_max_angle = lerp(deg_to_rad(slither_floor_angle), deg_to_rad(rolling_floor_angle), coil_amount)
 
 
 func _physics_process(delta: float) -> void:
