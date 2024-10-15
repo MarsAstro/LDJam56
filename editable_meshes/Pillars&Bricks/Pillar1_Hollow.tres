@@ -1,6 +1,6 @@
 [gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://itgb3egws8gg"]
 
-[ext_resource type="Texture2D" uid="uid://b7g8faxi1xhqk" path="res://models/MESH_PillarsNWedges_MAT_PillarsNWedges_Base_color.png" id="1_4qghy"]
+[ext_resource type="Texture2D" uid="uid://b7g8faxi1xhqk" path="res://Models/Bricks&Stone/MESH_PillarsNWedges_MAT_PillarsNWedges_Base_color.png" id="1_4qghy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yt2df"]
 resource_name = "MAT_PillarsNWedges"

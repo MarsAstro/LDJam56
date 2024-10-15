@@ -1,6 +1,6 @@
 [gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://ddamhc4r3urqi"]
 
-[ext_resource type="Texture2D" uid="uid://pp8hgr8p56cc" path="res://models/MESH_StoneOrnament_MAT_Stoneornament_Base_color.png" id="1_ruyc5"]
+[ext_resource type="Texture2D" uid="uid://pp8hgr8p56cc" path="res://Models/Bricks&Stone/MESH_StoneOrnament_MAT_Stoneornament_Base_color.png" id="1_ruyc5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e0cqh"]
 resource_name = "MAT_Stoneornament"

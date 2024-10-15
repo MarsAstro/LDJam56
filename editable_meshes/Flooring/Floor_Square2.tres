@@ -1,6 +1,6 @@
 [gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://c0duanio2qa1j"]
 
-[ext_resource type="Texture2D" uid="uid://dv7pk4niou2g1" path="res://models/MESH_SquareFloorTile_MAT_FloorSquare_Base_color.png" id="1_4p4tu"]
+[ext_resource type="Texture2D" uid="uid://dv7pk4niou2g1" path="res://Models/Bricks&Stone/MESH_SquareFloorTile_MAT_FloorSquare_Base_color.png" id="1_4p4tu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kkd6u"]
 resource_name = "MAT_FloorSquare"

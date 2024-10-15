@@ -1,6 +1,7 @@
 [gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://d2r2mn1e5sqdy"]
 
-[ext_resource type="Texture2D" uid="uid://cbdatcbraf05d" path="res://models/MESH_SpiralSteps_Interior_MAT_SpiralStairs_Base_color.png" id="1_5m788"]
+[ext_resource type="Texture2D" uid="uid://cbdatcbraf05d" path="res://Models/Bricks&Stone/MESH_SpiralSteps_Interior_MAT_SpiralStairs_Base_color.png" id="1_5m788"]
+
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_id35m"]
 resource_name = "MAT_SpiralStairs"
