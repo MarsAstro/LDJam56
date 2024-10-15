@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://dxp5nkxcpkidt"]
+[gd_scene load_steps=35 format=4 uid="uid://dxp5nkxcpkidt"]
 
 [ext_resource type="Script" path="res://scripts/test_world.gd" id="1_2qdh1"]
 [ext_resource type="PackedScene" uid="uid://0yjbffwi7ted" path="res://scenes/snake.tscn" id="1_f2yil"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://b0e2ajl7ajeae" path="res://scenes/egg.tscn" id="21_p2gbb"]
 [ext_resource type="Texture2D" uid="uid://dxkx0oiqvhu1g" path="res://Models/Bricks&Stone/MESH_RampWalls_MAT_RampWall_Base_color.png" id="22_v5vo0"]
 [ext_resource type="PackedScene" uid="uid://du2hqfqmopcxe" path="res://collision_models/pillars_and_bricks/pillar_hollow.tscn" id="23_rf0ae"]
+[ext_resource type="PackedScene" uid="uid://cfyew6j6pp3w6" path="res://Models/Bricks&Stone/MESH_Tunnel.glb" id="24_6umya"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g0oeo"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -36,12 +37,14 @@ background_mode = 2
 sky = SubResource("Sky_u5dum")
 ambient_light_source = 2
 ambient_light_color = Color(0.740553, 0.463589, 0.378743, 1)
+ambient_light_energy = 1.51
 tonemap_mode = 2
 ssao_enabled = true
 ssao_radius = 1.67
 ssao_intensity = 16.0
 ssao_power = 0.989629
 ssil_enabled = true
+ssil_radius = 3.15
 ssil_intensity = 2.0
 glow_enabled = true
 glow_bloom = 0.06
@@ -435,5 +438,27 @@ skeleton = NodePath("")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.887296, 1.16407, -4.14334)
 mesh = SubResource("ArrayMesh_1aa40")
 skeleton = NodePath("")
+
+[node name="MESH_Tunnel2" parent="." instance=ExtResource("24_6umya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.62423, 0.733152, -11.8332)
+
+[node name="MESH_Tunnel3" parent="." instance=ExtResource("24_6umya")]
+transform = Transform3D(-4.37114e-08, 1, 0, -0.935654, -4.08987e-08, -0.35292, -0.35292, -1.54266e-08, 0.935654, 4.74736, 4.63714, -64.4661)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.478917, -0.173583, 0.860527, 0.877836, -0.087447, 0.47091, -0.00649171, 0.980929, 0.194258, 10.9472, 5.92239, -30.3312)
+light_color = Color(0, 0.570751, 0.603851, 1)
+light_energy = 12.065
+light_specular = 6.29
+shadow_enabled = true
+spot_range = 12.936
+spot_angle = 67.29
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(-0.478917, -0.173583, 0.860527, 0.877836, -0.087447, 0.47091, -0.00649172, 0.980929, 0.194258, 1.54904, 2.14096, -21.624)
+light_color = Color(0.402344, 0.440877, 1, 1)
+light_energy = 16.0
+light_specular = 10.405
+shadow_enabled = true
 
 [editable path="MESH_RampWalls"]
