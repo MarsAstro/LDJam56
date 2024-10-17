@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://lqcu6yjt5cm8"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_3tr6s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mw21x"]
+font_size = 111
+font_color = Color(1, 0.623529, 1, 1)
+shadow_size = 9
+shadow_color = Color(0, 0, 0, 0.180392)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3tr6s")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.884607, 0.860587, 0.89874, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 331.0
+offset_top = 75.0
+offset_right = 938.0
+offset_bottom = 227.0
+text = "Snake Rolls"
+label_settings = SubResource("LabelSettings_mw21x")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 547.0
+offset_top = 337.0
+offset_right = 707.0
+offset_bottom = 386.0
+text = "Play"
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 546.0
+offset_top = 401.0
+offset_right = 706.0
+offset_bottom = 450.0
+text = "Quit"
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
