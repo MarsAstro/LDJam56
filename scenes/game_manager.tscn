@@ -1,11 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxygx6dr0jq84"]
+[gd_scene load_steps=4 format=3 uid="uid://dxygx6dr0jq84"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_sg02g"]
 [ext_resource type="AudioStream" uid="uid://d85pmmwogb37" path="res://sounds/eat.wav" id="2_0s3lw"]
 [ext_resource type="AudioStream" uid="uid://canxkkkfjiqd7" path="res://sounds/soundtrack.wav" id="3_qat7o"]
-[ext_resource type="PackedScene" uid="uid://c21t0drlv4mxj" path="res://Models/BLOCKS/PlaygardenBlocks.glb" id="4_1a0gj"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_omymu"]
 
 [node name="GameManager" type="Node"]
 script = ExtResource("1_sg02g")
@@ -16,9 +13,3 @@ stream = ExtResource("2_0s3lw")
 [node name="BGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_qat7o")
 volume_db = -0.695
-
-[node name="PlaygardenBlocks" parent="." instance=ExtResource("4_1a0gj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00189716, 0, 0.00309855)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_omymu")
