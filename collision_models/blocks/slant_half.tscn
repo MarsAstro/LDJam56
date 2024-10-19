@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://diijj1oi3dhrl"]
+
+[ext_resource type="ArrayMesh" uid="uid://bvgqxlw0looyn" path="res://editable_meshes/Blocks/slant_half.tres" id="1_qpyu6"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nvxu7"]
+data = PackedVector3Array(-0.5, -0.5, 0.5, -0.5, 0, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0, -0.5, -0.5, -0.5, -0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0, -0.5, -0.5, 0.5, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5)
+
+[node name="SlantHalf" type="StaticBody3D"]
+
+[node name="SlantHalf" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_qpyu6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConcavePolygonShape3D_nvxu7")

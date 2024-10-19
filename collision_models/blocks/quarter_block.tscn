@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsgtos0vdn654"]
+
+[ext_resource type="ArrayMesh" uid="uid://dt25eetowermd" path="res://editable_meshes/Blocks/quarter_block.tres" id="1_im2fs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i10ox"]
+size = Vector3(0.25, 1, 1)
+
+[node name="QuarterBlock" type="StaticBody3D"]
+
+[node name="QuarterBlock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_im2fs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_i10ox")

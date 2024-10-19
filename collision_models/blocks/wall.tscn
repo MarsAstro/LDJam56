@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0ltwsmchoyns"]
+
+[ext_resource type="ArrayMesh" uid="uid://ux4ot7wsdkk6" path="res://editable_meshes/Blocks/wall.tres" id="1_5jnf7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l6p83"]
+size = Vector3(0.101318, 1, 1)
+
+[node name="Wall" type="StaticBody3D"]
+
+[node name="Wall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_5jnf7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_l6p83")

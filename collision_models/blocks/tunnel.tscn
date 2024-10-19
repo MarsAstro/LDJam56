@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://heay2xglwogp"]
+
+[ext_resource type="ArrayMesh" uid="uid://cdifx6spdoecm" path="res://editable_meshes/Blocks/tunnel.tres" id="1_vcehe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xdjc1"]
+size = Vector3(1, 0.0991211, 1)
+
+[node name="Tunnel" type="StaticBody3D"]
+
+[node name="Tunnel" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_vcehe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.450439, 0)
+shape = SubResource("BoxShape3D_xdjc1")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44844, 0)
+shape = SubResource("BoxShape3D_xdjc1")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -0.451817, 0.0027816, 0)
+shape = SubResource("BoxShape3D_xdjc1")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.450679, 0.0027816, 0)
+shape = SubResource("BoxShape3D_xdjc1")

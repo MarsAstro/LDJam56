@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0owh5ef7mmhj"]
+
+[ext_resource type="ArrayMesh" uid="uid://clpvwseikkded" path="res://editable_meshes/Blocks/slant_45.tres" id="1_nkyid"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_qe271"]
+data = PackedVector3Array(-0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5)
+
+[node name="Slant45" type="StaticBody3D"]
+
+[node name="Slant45" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_nkyid")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConcavePolygonShape3D_qe271")

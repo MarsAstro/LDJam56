@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://butbyv2rh8d5d"]
+
+[ext_resource type="ArrayMesh" uid="uid://dvpb7wx10ao42" path="res://editable_meshes/Blocks/eight_block.tres" id="1_twesl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mlm0m"]
+size = Vector3(0.127319, 1, 1)
+
+[node name="EightBlock" type="StaticBody3D"]
+
+[node name="EightBlock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_twesl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000183105, 0, 0)
+shape = SubResource("BoxShape3D_mlm0m")

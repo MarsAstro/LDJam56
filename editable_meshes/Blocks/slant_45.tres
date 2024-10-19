@@ -1,0 +1,33 @@
+[gd_resource type="ArrayMesh" load_steps=3 format=4 uid="uid://clpvwseikkded"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_08ytd"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mked7"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAACAAEABQADAAQAAwABAAQAAwAAAAEAAgADAAUAAgAAAAMAAQAFAAQAAQACAAUA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAAAAAAAAAAAA//8AAP//AAD///////8AAP//AAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[resource]
+resource_name = "PlaygardenBlocks_1x1m_square_001"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("UsxP0YkoxvP2LIWJbipP0X0vxO1vn/77fS/SCGzKxvNvnwwXUsxrL4ko4lH10jNSbiprL2HRxO310hf0YdHSCGzK4lESMTNS"),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AgAIAAUAEQALAA4ACQADAAwACQAAAAMABwAKABAABwABAAoABAAPAA0ABAAGAA8A"),
+"material": SubResource("StandardMaterial3D_08ytd"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("AAAAAP///78AAAAA//9U1QAAAAD//6rpAAD//////78AAP//////3wAA/////6rpAAAAAAAA/98AAAAAAABU1QAAAAAAAKrp//8AAP///7///wAA//9U1f//AAD//////////////7//////////3/////////////8AAAAA/9///wAAAABU1f//AAAAAP///3//f1RVVFUI6vrK/3//f////38I6vrK////f1VVVFUI6vrK/3//f1VVVFX/v/9//3//f////3//v/9/////f1VVVFX/v/9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_mked7")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://cb734yqaafdv6"]
+
+[ext_resource type="ArrayMesh" uid="uid://bdtqnfllbnslj" path="res://editable_meshes/Blocks/wall_hole.tres" id="1_5yx62"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g6kx6"]
+size = Vector3(0.0979004, 1, 0.367676)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1v3j4"]
+size = Vector3(0.0979004, 0.243164, 0.999023)
+
+[node name="WallHole" type="StaticBody3D"]
+
+[node name="WallHole" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_5yx62")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.316162)
+shape = SubResource("BoxShape3D_g6kx6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.318345)
+shape = SubResource("BoxShape3D_g6kx6")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.378418, 0.000151381)
+shape = SubResource("BoxShape3D_1v3j4")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.374271, 0.000151381)
+shape = SubResource("BoxShape3D_1v3j4")

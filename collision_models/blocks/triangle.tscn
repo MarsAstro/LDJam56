@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmhowgkib7423"]
+
+[ext_resource type="ArrayMesh" uid="uid://dl680p8yx8dbx" path="res://editable_meshes/Blocks/triangle.tres" id="1_85pee"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8wqbs"]
+data = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5)
+
+[node name="Triangle" type="StaticBody3D"]
+
+[node name="Triangle" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_85pee")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConcavePolygonShape3D_8wqbs")

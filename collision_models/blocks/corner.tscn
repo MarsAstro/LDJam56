@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dh23ghy2ikubw"]
+
+[ext_resource type="ArrayMesh" uid="uid://dldwqfiy41u4i" path="res://editable_meshes/Blocks/corner.tres" id="1_xk0io"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cebk4"]
+size = Vector3(1, 0.105469, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s132k"]
+size = Vector3(0.102051, 1.00342, 1)
+
+[node name="Corner" type="StaticBody3D"]
+
+[node name="Corner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00159359, 5.96046e-08, 0.0035131)
+mesh = ExtResource("1_xk0io")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.447266, 0)
+shape = SubResource("BoxShape3D_cebk4")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.448975, 0.00170898, 0)
+shape = SubResource("BoxShape3D_s132k")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.00208178, 0.00170898, 0.447378)
+shape = SubResource("BoxShape3D_s132k")

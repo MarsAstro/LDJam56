@@ -1,0 +1,33 @@
+[gd_resource type="ArrayMesh" load_steps=3 format=4 uid="uid://ux4ot7wsdkk6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ygpif"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pwkf8"]
+_surfaces = [{
+"aabb": AABB(-0.05, -0.5, -0.5, 0.1, 1, 1),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAADAAEAAAACAAMAAgAHAAMAAgAGAAcABgAFAAcABgAEAAUABAABAAUABAAAAAEAAgAEAAYAAgAAAAQABwABAAMABwAFAAEA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAAAAAAAAAAAAAAD//wAAAAD//wAA//8AAP///////wAA//8AAAAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[resource]
+resource_name = "PlaygardenBlocks_1x1m_square_005"
+_surfaces = [{
+"aabb": AABB(-0.05, -0.5, -0.5, 0.1, 1, 1),
+"attribute_data": PackedByteArray("JOaBCIP6/tTG0UwJJOYy1CTmMtQVBkwJxtFMCYP6TAnG0f7UxtH+1CTmgQgVBv7UxtGBCCTm/tTG0TLUxtEy1IP6MtQVBjLUJOZMCSTmTAnG0YEIJOb+1IP6gQgVBoEI"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AgALAAUAAgAIAAsABgAVAAkABgASABUAFAARABcAFAAOABEADAADAA8ADAAAAAMABwANABMABwABAA0AFgAEAAoAFgAQAAQA"),
+"material": SubResource("StandardMaterial3D_ygpif"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP////8AAAAA/////wAAAAD//1TVAAD///////8AAP//////vwAA/////1TVAAAAAAAA//8AAAAAAAD//wAAAAAAAFTVAAD//wAA//8AAP//AAD/vwAA//8AAFTV//8AAP///////wAA////////AAD//1TV////////////////////v////////1TV//8AAAAA/////wAAAAD/////AAAAAFTV/////wAA////////AAD/v/////8AAFTV/3//f/9//z9UVaqq/3//f////39UVamq////f/9//z9UVaqq////f////39UVaqq/3//f/9//z+qqlVV/3//f////3+qqlRV////f/9//z+qqlRV////f////3+qqlRV")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pwkf8")

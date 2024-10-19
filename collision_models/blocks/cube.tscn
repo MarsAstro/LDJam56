@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://plce5yrpn24w"]
+
+[ext_resource type="ArrayMesh" uid="uid://hfreexh43s64" path="res://editable_meshes/Blocks/cube.tres" id="1_nuc8j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7wwiy"]
+
+[node name="Cube" type="StaticBody3D"]
+
+[node name="Cube" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_nuc8j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_7wwiy")
