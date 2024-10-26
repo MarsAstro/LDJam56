@@ -176,7 +176,7 @@ render_priority = 0
 shader = ExtResource("2_06qrh")
 shader_parameter/grid_texture = ExtResource("3_vmpqx")
 
-[sub_resource type="BoxMesh" id="BoxMesh_ccr54"]
+[sub_resource type="SphereMesh" id="SphereMesh_h3pj7"]
 
 [node name="SnakeAnimWIP" type="Node3D"]
 script = ExtResource("1_ifiu6")
@@ -293,5 +293,5 @@ material_overlay = SubResource("ShaderMaterial_d2nre")
 size = Vector3(46.7666, 0.001, 61.5713)
 
 [node name="IndicatorThing" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.209772, 0, 0, 0, 0.209772, 0, 0, 0, 1.3449, 2.12999, 0, 1.81864)
-mesh = SubResource("BoxMesh_ccr54")
+transform = Transform3D(0.415, 0, 0, 0, 0.415, 0, 0, 0, 0.415, 2.35444, 0, 2.2229)
+mesh = SubResource("SphereMesh_h3pj7")
