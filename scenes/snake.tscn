@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=4 uid="uid://0yjbffwi7ted"]
+[gd_scene load_steps=20 format=4 uid="uid://0yjbffwi7ted"]
 
 [ext_resource type="Script" path="res://scripts/snake.gd" id="1_50dnv"]
 [ext_resource type="Script" path="res://scripts/snake_body.gd" id="2_cpupg"]
 [ext_resource type="Script" path="res://scripts/follow_node.gd" id="3_fnrxi"]
+[ext_resource type="ArrayMesh" uid="uid://cdifx6spdoecm" path="res://editable_meshes/Blocks/tunnel.tres" id="4_bjimj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8w4b2"]
 resource_name = "MAT_SnakeBody"
@@ -159,11 +160,12 @@ bind/11/bone = -1
 bind/11/pose = Transform3D(1, 1.50996e-07, 4.44928e-21, 2.25857e-22, -2.94663e-14, 1, 1.50996e-07, -1, -2.94663e-14, -6.36955e-10, -1.34179, 0.00421836)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vyawf"]
-radius = 0.112928
-height = 0.340841
+radius = 0.055545
+height = 0.153011
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ewlbf"]
-height = 0.280511
+height = 0.096
+radius = 0.27
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w616h"]
 albedo_color = Color(1, 0.262745, 1, 1)
@@ -309,49 +311,49 @@ skin = SubResource("Skin_hmgj3")
 "blend_shapes/Close mouth" = 0.0
 
 [node name="HeadCollider" type="CollisionShape3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0111507, 0.08777, -0.0604605)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_vyawf")
 
 [node name="CoilCollider" type="CollisionShape3D" parent="Head"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.500888, 0.141215)
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.238497, 0.108966)
 shape = SubResource("CylinderShape3D_ewlbf")
 
 [node name="CameraPivot" type="Node3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 0.951852, 0.306559, 0, -0.306559, 0.951852, 0, 0.330227, 0)
 
 [node name="SpringArm3D" type="SpringArm3D" parent="Head/CameraPivot"]
-spring_length = 5.0
+spring_length = 2.5
 margin = 0.5
 
 [node name="Camera3D" type="Camera3D" parent="Head/CameraPivot/SpringArm3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
 
 [node name="CoilPivot" type="Node3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518647, 0.126591)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.245591, 0.112496)
 
 [node name="CoilFrontBody" type="Node3D" parent="Head/CoilPivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.376408, 0.367784)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.139818, 0.251036)
 
 [node name="CoilBackBody" type="Node3D" parent="Head/CoilPivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.378, -0.361)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14141, -0.259082)
 
 [node name="CoilTail" type="Node3D" parent="Head/CoilPivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.463972, -0.384631)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.20252, -0.189053)
 
 [node name="Temphead" type="MeshInstance3D" parent="Head/CoilPivot"]
-transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, 0, -0.450673, -0.126591)
+transform = Transform3D(0.104, 0, 0, 0, 0.104, 0, 0, 0, 0.104, 0, -0.244563, -0.111974)
 mesh = SubResource("SphereMesh_2sa4w")
 skeleton = NodePath("../..")
 
 [node name="RayCast3D" type="RayCast3D" parent="Head"]
-target_position = Vector3(0, 1.1, 0)
+target_position = Vector3(0, 0.58, 0)
 
 [node name="SlitherFrontBody" type="Node3D" parent="." node_paths=PackedStringArray("node_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 1.19269)
 visible = false
 script = ExtResource("3_fnrxi")
 node_to_follow = NodePath("../Head")
-follow_distance = 1.2
+follow_distance = 0.6
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="SlitherFrontBody"]
 mesh = SubResource("SphereMesh_vrg6j")
@@ -361,7 +363,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 2.23035)
 visible = false
 script = ExtResource("3_fnrxi")
 node_to_follow = NodePath("../SlitherFrontBody")
-follow_distance = 1.2
+follow_distance = 0.6
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="SlitherBackBody"]
 mesh = SubResource("SphereMesh_vrg6j")
@@ -371,7 +373,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0970047, 3.41009)
 visible = false
 script = ExtResource("3_fnrxi")
 node_to_follow = NodePath("../SlitherBackBody")
-follow_distance = 1.2
+follow_distance = 0.6
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="SlitherTail"]
 mesh = SubResource("SphereMesh_vrg6j")
@@ -383,7 +385,7 @@ curve = SubResource("Curve3D_85je7")
 transform = Transform3D(-0.902302, -0.0253157, 0.430345, -1.86263e-09, 0.998257, 0.0587251, -0.431089, 0.0529876, -0.900744, -0.198771, 1.21663, -0.14136)
 
 [node name="BodyPolygon" type="CSGPolygon3D" parent="."]
-polygon = PackedVector2Array(-0.0271923, -0.0334124, -0.0362521, -0.00449719, -0.0312265, 0.0237834, -0.000937382, 0.0376443, 0.029905, 0.0249173, 0.0405791, -0.00113798, 0.0336193, -0.0333862, -0.000152448, -0.0439177)
+polygon = PackedVector2Array(-0.0143051, -0.0123271, -0.0183172, -0.00010669, -0.0127798, 0.0131835, -0.000167531, 0.0187202, 0.0112318, 0.0132211, 0.0183489, 0.000444514, 0.0126997, -0.0135995, 0.000179771, -0.0183195)
 mode = 2
 path_node = NodePath("../BodyPath")
 path_interval_type = 0
@@ -416,3 +418,13 @@ mesh = SubResource("SphereMesh_gfpdt")
 transform = Transform3D(0.160383, 0, 0, 0, 0.160383, 0, 0, 0, 0.160383, 0, 0, 0)
 visible = false
 mesh = SubResource("SphereMesh_gfpdt")
+
+[node name="Tunnel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.397931, -0.940931)
+visible = false
+mesh = ExtResource("4_bjimj")
+
+[node name="Tunnel2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.147931, -0.636333)
+visible = false
+mesh = ExtResource("4_bjimj")
